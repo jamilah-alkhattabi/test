@@ -70,56 +70,45 @@
       cursor: pointer;
       border-radius: 5px;
       margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
     }
 
     .hero button:hover {
       background-color: #555;
     }
 
-    /* Contact Form */
+    /* Contact Section */
     .contact {
       padding: 60px 20px;
       background-color: #f9f9f9;
+      text-align: center;
     }
 
     .contact h2 {
-      text-align: center;
       font-size: 32px;
       font-family: 'Playfair Display', serif;
       margin-bottom: 20px;
     }
 
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .contact-form label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 12px;
+    .contact p {
+      font-size: 18px;
       margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
     }
 
-    .contact-form button {
-      background-color: #333;
+    .contact img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact .empowering-text {
+      font-size: 24px;
       color: #fff;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
+      background-color: #333;
+      padding: 10px;
+      display: inline-block;
+      margin-top: 20px;
       border-radius: 5px;
-    }
-
-    .contact-form button:hover {
-      background-color: #555;
     }
 
     /* Footer */
@@ -165,31 +154,21 @@
   <section class="hero">
     <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
     <p>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</p>
-    <button>Discover Our Services</button>
+    <button onclick="window.location.href='#services';">Discover Our Services</button>
   </section>
 
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact Us</h2>
-    <div class="contact-form">
-      <form action="submit-form.php" method="POST">
-        <label for="name">Name (required)</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email (required)</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message (required)</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </div>
+    <p>Email: operations@ascensionbuildingsvcs.com</p>
+    <p>Phone: (346) 442-8037</p>
+    <img src="path-to-image.jpg" alt="Empowering Businesses">
+    <div class="empowering-text">Empowering Businesses for Success</div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109</p>
   </footer>
 
 </body>
