@@ -120,6 +120,10 @@
       border-top: 1px solid #eee;
     }
 
+    footer p {
+      margin: 0;
+    }
+
     /* Mobile Styles */
     @media (max-width: 768px) {
       header {
@@ -157,18 +161,22 @@
     <button onclick="window.location.href='#services';">Discover Our Services</button>
   </section>
 
+  <!-- Empowering Businesses Section -->
+  <section class="contact">
+    <img src="path-to-image.jpg" alt="Empowering Businesses">
+    <div class="empowering-text">Empowering Businesses for Success</div>
+  </section>
+
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact Us</h2>
     <p>Email: operations@ascensionbuildingsvcs.com</p>
     <p>Phone: (346) 442-8037</p>
-    <img src="path-to-image.jpg" alt="Empowering Businesses">
-    <div class="empowering-text">Empowering Businesses for Success</div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109</p>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
   </footer>
 
 </body>
