@@ -78,6 +78,32 @@
       background-color: #555;
     }
 
+    /* Empowering Businesses Section */
+    .empowering-container {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .empowering-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .empowering-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5); /* Optional: Add a slight background for better contrast */
+      padding: 10px;
+      border-radius: 5px;
+    }
+
     /* Contact Section */
     .contact {
       padding: 60px 20px;
@@ -94,21 +120,6 @@
     .contact p {
       font-size: 18px;
       margin-bottom: 20px;
-    }
-
-    .contact img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .contact .empowering-text {
-      font-size: 24px;
-      color: #fff;
-      background-color: #333;
-      padding: 10px;
-      display: inline-block;
-      margin-top: 20px;
-      border-radius: 5px;
     }
 
     /* Footer */
@@ -162,7 +173,7 @@
   </section>
 
   <!-- Empowering Businesses Section -->
-  <section class="contact">
+  <section class="empowering-container">
     <img src="path-to-image.jpg" alt="Empowering Businesses">
     <div class="empowering-text">Empowering Businesses for Success</div>
   </section>
