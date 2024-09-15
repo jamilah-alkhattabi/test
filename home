@@ -3,189 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ascension Building Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* Global Styles */
     body {
+      font-family: 'Lato', sans-serif;
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      padding: 0;
+      background-color: #fff;
       color: #333;
-      background-color: #f4f4f4;
       line-height: 1.6;
     }
-    header, footer {
-      background-color: #000;
-      padding: 20px 40px;
-      text-align: center;
-      color: #fff;
-    }
-    header img {
-      max-width: 180px;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    
+    /* Header */
+    header {
       display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 18px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    nav ul li a:hover {
-      color: #dcdcdc;
-    }
-    .divider {
-      height: 4px;
-      background-color: #dcdcdc;
-      margin: 40px 0;
-    }
-    .main-content {
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-      text-align: center;
       background-color: #fff;
-      margin: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 28px;
+
+    header img {
+      width: 150px;
+    }
+
+    nav a {
+      margin-left: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
       color: #333;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    h2 {
-      color: #555;
-      margin-top: 10px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-    }
-    .btn {
-      background-color: #333;
-      color: white;
-      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
-      transition: background-color 0.3s;
     }
-    .btn:hover {
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 20px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .hero button:hover {
       background-color: #555;
     }
 
     /* Contact Form */
+    .contact {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .contact h2 {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
     .contact-form {
       max-width: 600px;
-      margin: 40px auto;
-      text-align: left;
+      margin: 0 auto;
     }
+
     .contact-form label {
       display: block;
-      margin: 10px 0 5px;
+      font-size: 16px;
+      margin-bottom: 8px;
     }
+
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 10px;
-      margin: 5px 0;
+      padding: 12px;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    .contact-form input[type="submit"] {
+
+    .contact-form button {
       background-color: #333;
-      color: white;
+      color: #fff;
       border: none;
-      cursor: pointer;
-      padding: 15px;
+      padding: 12px 25px;
       font-size: 16px;
+      cursor: pointer;
       border-radius: 5px;
-      transition: background-color 0.3s;
     }
-    .contact-form input[type="submit"]:hover {
+
+    .contact-form button:hover {
       background-color: #555;
     }
 
-    /* Footer Styles */
+    /* Footer */
     footer {
-      margin-top: 50px;
-    }
-    footer p {
-      margin: 10px 0;
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      font-size: 14px;
+      border-top: 1px solid #eee;
     }
 
-    /* Responsive Design */
+    /* Mobile Styles */
     @media (max-width: 768px) {
-      header, footer {
-        padding: 10px 20px;
+      header {
+        flex-direction: column;
+        align-items: center;
       }
-      header img {
-        max-width: 120px;
+
+      .hero h1 {
+        font-size: 36px;
       }
-      h1 {
-        font-size: 24px;
-      }
-      .btn {
-        padding: 10px 20px;
-      }
-      .main-content, .contact-form {
-        margin: 10px;
+
+      .contact h2 {
+        font-size: 28px;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="/mnt/data/Inc. (1).png" alt="Ascension Building Services Logo">
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <img src="logo-url-here" alt="Ascension Building Services Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<div class="main-content">
-  <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
-  <h2>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</h2>
-  <a href="#services" class="btn">Discover Our Services</a>
-  <div class="divider"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
+    <p>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</p>
+    <button>Discover Our Services</button>
+  </section>
 
-  <h2>Contact Us</h2>
-  <p>Interested in working together? Fill out some info, and we will be in touch shortly. We can’t wait to hear from you!</p>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form action="submit-form.php" method="POST">
+        <label for="name">Name (required)</label>
+        <input type="text" id="name" name="name" required>
 
-  <div class="contact-form">
-    <form action="#">
-      <label for="name">Name (required)</label>
-      <input type="text" id="name" name="name" required>
+        <label for="email">Email (required)</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="email">Email (required)</label>
-      <input type="email" id="email" name="email" required>
+        <label for="message">Message (required)</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <label for="message">Message (required)</label>
-      <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-      <input type="submit" value="Send">
-    </form>
-  </div>
-</div>
-
-<footer>
-  <p>Ascension Building Services, LLC</p>
-  <p>6 Liberty Square, #2842, Boston, MA 02109</p>
-  <p>Email: operations@ascensionbuildingsvcs.com | Phone: (346) 442-8037</p>
-  <p>&copy; 2024 Ascension Building Services. All rights reserved.</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
+  </footer>
 
 </body>
 </html>
