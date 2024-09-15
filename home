@@ -73,4 +73,111 @@
       display: inline-block;
       margin-top: 20px;
       font-weight: 500;
-      transition
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #333;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: left;
+    }
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #333;
+    }
+
+    /* Footer Styles */
+    footer p {
+      margin: 10px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      header img {
+        max-width: 120px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .btn {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="/mnt/data/Inc. (1).png" alt="Ascension Building Services Logo">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="main-content">
+  <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
+  <h2>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</h2>
+  <a href="#services" class="btn">Discover Our Services</a>
+  <div class="divider"></div>
+
+  <h2>Contact Us</h2>
+  <p>Interested in working together? Fill out some info, and we will be in touch shortly. We can’t wait to hear from you!</p>
+
+  <div class="contact-form">
+    <form action="#">
+      <label for="name">Name (required)</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email (required)</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message (required)</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>Ascension Building Services, LLC</p>
+  <p>6 Liberty Square, #2842, Boston, MA 02109</p>
+  <p>Email: operations@ascensionbuildingsvcs.com | Phone: (346) 442-8037</p>
+  <p>&copy; 2024 Ascension Building Services. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
