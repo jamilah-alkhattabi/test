@@ -155,7 +155,7 @@
 
   <!-- Header -->
   <header>
-    <img src="https://github.com/jamilah-alkhattabi/test/blob/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -173,7 +173,7 @@
 
   <!-- Empowering Businesses Section -->
   <section class="empowering-container">
-    <img src="https://github.com/jamilah-alkhattabi/test/blob/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg" alt="Empowering Businesses">
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg" alt="Empowering Businesses">
     <div class="empowering-text">Empowering Businesses for Success</div>
   </section>
 
