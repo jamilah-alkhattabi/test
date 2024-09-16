@@ -11,7 +11,7 @@
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #f4f4f4;
       color: #333;
       line-height: 1.6;
     }
@@ -23,6 +23,7 @@
       align-items: center;
       padding: 20px;
       background-color: #fff;
+      border-bottom: 1px solid #ddd;
     }
 
     header img {
@@ -45,7 +46,8 @@
     .hero {
       text-align: center;
       padding: 100px 20px;
-      background-color: #f9f9f9;
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
     }
 
     .hero h1 {
@@ -82,8 +84,8 @@
     /* Services Section */
     .services {
       padding: 60px 20px;
-      background-color: #f9f9f9;
-      text-align: center;
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
     }
 
     .services h2 {
@@ -99,6 +101,15 @@
       color: #555;
     }
 
+    .services h3 {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+
     .services ul {
       list-style: none;
       padding: 0;
@@ -108,12 +119,26 @@
 
     .services li {
       margin-bottom: 10px;
-      color: #333;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .services li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #333;
+      border-radius: 2px;
     }
 
     .services .contact-info {
       margin-top: 40px;
       font-size: 18px;
+      text-align: center;
     }
 
     .services .contact-info p {
@@ -143,7 +168,7 @@
       padding: 20px;
       background-color: #fff;
       font-size: 14px;
-      border-top: 1px solid #eee;
+      border-top: 1px solid #ddd;
     }
 
     footer p {
