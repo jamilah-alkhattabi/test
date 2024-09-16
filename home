@@ -26,7 +26,8 @@
     }
 
     header img {
-      width: 150px;
+      width: 180px; /* Increased size for logo */
+      height: auto;
     }
 
     nav a {
@@ -88,8 +89,10 @@
     .empowering-container img {
       width: 100%;
       height: auto;
+      max-width: 1200px; /* Ensure it doesn't stretch too much */
+      margin: 0 auto;
       display: block;
-      opacity: 0.7; /* Make the image slightly transparent */
+      object-fit: cover; /* Crop image if needed */
     }
 
     .empowering-text {
@@ -101,6 +104,8 @@
       font-size: 24px;
       font-weight: bold;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+      padding: 0 10px;
+      box-sizing: border-box;
     }
 
     /* Contact Section */
@@ -147,6 +152,14 @@
 
       .contact h2 {
         font-size: 28px;
+      }
+
+      .empowering-text {
+        font-size: 18px; /* Adjust text size for mobile */
+      }
+
+      header img {
+        width: 150px; /* Adjust logo size for mobile */
       }
     }
   </style>
