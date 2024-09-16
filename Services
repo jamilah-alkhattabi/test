@@ -11,7 +11,7 @@
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #f4f4f4;
       color: #333;
       line-height: 1.6;
     }
@@ -23,6 +23,7 @@
       align-items: center;
       padding: 20px;
       background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     header img {
@@ -35,9 +36,11 @@
       font-size: 18px;
       color: #333;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
+      color: #007BFF;
       text-decoration: underline;
     }
 
@@ -45,25 +48,31 @@
     .hero {
       text-align: center;
       padding: 100px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      background-image: url('https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Book%20a%20free%20consultation.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
-      color: #333;
+      margin: 0;
+      font-weight: bold;
     }
 
     .hero p {
-      font-size: 18px;
+      font-size: 20px;
       margin: 20px 0;
-      max-width: 600px;
+      max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .hero button {
-      background-color: #333;
-      color: #fff;
+      background-color: #fff;
+      color: #007BFF;
       border: none;
       padding: 12px 25px;
       font-size: 16px;
@@ -72,47 +81,63 @@
       margin-top: 20px;
       text-transform: uppercase;
       font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .hero button:hover {
-      background-color: #555;
+      background-color: #007BFF;
+      color: #fff;
     }
 
     /* Services Section */
     .services {
       padding: 60px 20px;
-      background-color: #f9f9f9;
+      background-color: #fff;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 1200px;
     }
 
     .services h2 {
-      font-size: 32px;
+      font-size: 36px;
       font-family: 'Playfair Display', serif;
+      color: #333;
       margin-bottom: 20px;
     }
 
     .services p {
       font-size: 18px;
       margin-bottom: 20px;
+      color: #666;
     }
 
     .services ul {
       list-style: none;
       padding: 0;
+      margin: 0;
+      text-align: left;
+      display: inline-block;
+      font-size: 18px;
+      color: #444;
     }
 
     .services li {
-      font-size: 18px;
       margin-bottom: 10px;
+    }
+
+    .services h3 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #007BFF;
     }
 
     .services .contact-info {
       margin-top: 40px;
-      font-size: 18px;
     }
 
     .services button {
-      background-color: #333;
+      background-color: #007BFF;
       color: #fff;
       border: none;
       padding: 12px 25px;
@@ -122,10 +147,11 @@
       margin-top: 20px;
       text-transform: uppercase;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
     .services button:hover {
-      background-color: #555;
+      background-color: #0056b3;
     }
 
     /* Footer */
@@ -155,6 +181,11 @@
       .services h2 {
         font-size: 28px;
       }
+
+      .services ul {
+        text-align: center;
+        display: block;
+      }
     }
   </style>
 </head>
@@ -175,6 +206,7 @@
   <section class="hero">
     <h1>Our Services</h1>
     <p>Discover how we can help your business grow and succeed with our tailored solutions.</p>
+    <button onclick="window.location.href='#contact';">Contact Us</button>
   </section>
 
   <!-- Services Section -->
