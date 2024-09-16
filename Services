@@ -1,1 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ascension Building Services - Our Services</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
 
+    h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    header img {
+      width: 180px;
+    }
+
+    nav a {
+      margin-left: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-image: linear-gradient(90deg, #333, #555);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero button {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .hero button:hover {
+      background-color: #ddd;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 20px;
+      background-color: #f7f7f7;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    .service-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-box:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .service-text {
+      width: 60%;
+    }
+
+    .service-text h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .service-text p {
+      font-size: 18px;
+    }
+
+    .service-image {
+      width: 35%;
+      text-align: center;
+    }
+
+    .service-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Specialized Expertise Section */
+    .expertise {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .expertise h3 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .expertise ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .expertise ul li {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Industries Section */
+    .industries {
+      padding: 60px 20px;
+      background-color: #f7f7f7;
+    }
+
+    .industries h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .industries ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .industries ul li {
+      font-size: 20px;
+      margin-bottom: 20px;
+      width: 45%;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Call to Action */
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .cta button:hover {
+      background-color: #ddd;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      font-size: 14px;
+      border-top: 1px solid #eee;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .service-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .service-text, .service-image {
+        width: 100%;
+      }
+
+      .industries ul li {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Business Consulting & Strategy</h1>
+    <p>We specialize in helping businesses create and execute strategies that lead to sustainable growth.</p>
+    <button onclick="window.location.href='#sign-up';">Sign up</button>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+      <div class="service-text">
+        <h3>Construction Procurement, Management, and Estimating</h3>
+        <p>We provide expert guidance for managing procurement processes, ensuring accuracy in estimation, and successful project completion.</p>
+      </div>
+      <div class="service-image">
+        <img src="construction-image.jpg" alt="Construction Procurement">
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="service-text">
+        <h3>Minority Certification Assistance</h3>
+        <p>Our team helps minority-owned businesses navigate the certification process, securing essential opportunities for growth.</p>
+      </div>
+      <div class="service-image">
+        <img src="certification-image.jpg" alt="Minority Certification Assistance">
+      </div>
+    </div>
+
+    <!-- More service-boxes with similar layout -->
+
+    <div class="service-box">
+      <div class="service-text">
+        <h3>Event Marketing and Non-Profit Development</h3>
+        <p>We help non-profits and event-based organizations optimize their marketing efforts to drive engagement and growth.</p>
+      </div>
+      <div class="service-image">
+        <img src="event-marketing.jpg" alt="Event Marketing">
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialized Expertise Section -->
+  <section class="expertise">
+    <h3>Specialized Expertise</h3>
+    <ul>
+      <li>Operational Excellence</li>
+      <li>Technology Solutions</li>
+      <li>Outsourced Experts</li>
+      <li>Alternative Housing Development</li>
+    </ul>
+  </section>
+
+  <!-- Industries We Serve Section -->
+  <section class="industries">
+    <h3>Industries We Serve</h3>
+    <ul>
+      <li>Construction and Development</li>
+      <li>Government and Non-Profit</li>
+      <li>Real Estate and Property Management</li>
+      <li>Health and Human Services</li>
+      <li>Small Businesses and Startups</li>
+    </ul>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <h2>Book a Free Consultation</h2>
+    <button onclick="window.location.href='#book-now';">Book Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Ascension Building Services.
