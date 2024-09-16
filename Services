@@ -4,28 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ascension Building Services - Our Services</title>
+  <title>Services - Ascension Building Services</title>
   <style>
     /* Global Styles */
     body {
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #fff;
       color: #333;
+      line-height: 1.6;
     }
-
-    h2, h3 {
-      font-family: 'Playfair Display', serif;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
+    
     /* Header */
     header {
       display: flex;
@@ -36,7 +26,7 @@
     }
 
     header img {
-      width: 180px;
+      width: 150px;
     }
 
     nav a {
@@ -55,161 +45,87 @@
     .hero {
       text-align: center;
       padding: 100px 20px;
-      background-image: linear-gradient(90deg, #333, #555);
-      color: #fff;
     }
 
     .hero h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 48px;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 20px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero button {
-      background-color: #fff;
-      color: #333;
+      background-color: #333;
+      color: #fff;
       border: none;
-      padding: 15px 30px;
+      padding: 12px 25px;
       font-size: 16px;
       cursor: pointer;
       border-radius: 5px;
-      margin-top: 30px;
+      margin-top: 20px;
       text-transform: uppercase;
       font-weight: bold;
     }
 
     .hero button:hover {
-      background-color: #ddd;
+      background-color: #555;
     }
 
     /* Services Section */
     .services {
       padding: 60px 20px;
-      background-color: #f7f7f7;
+      background-color: #f9f9f9;
+      text-align: center;
     }
 
     .services h2 {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 50px;
-      color: #333;
+      font-size: 32px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
     }
 
-    .service-box {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 40px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    .services p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
 
-    .service-box:nth-child(odd) {
-      flex-direction: row-reverse;
+    .services ul {
+      list-style: none;
+      padding: 0;
     }
 
-    .service-text {
-      width: 60%;
-    }
-
-    .service-text h3 {
-      font-size: 28px;
+    .services li {
+      font-size: 18px;
       margin-bottom: 10px;
     }
 
-    .service-text p {
+    .services .contact-info {
+      margin-top: 40px;
       font-size: 18px;
     }
 
-    .service-image {
-      width: 35%;
-      text-align: center;
-    }
-
-    .service-image img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    /* Specialized Expertise Section */
-    .expertise {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #fff;
-    }
-
-    .expertise h3 {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .expertise ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .expertise ul li {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-
-    /* Industries Section */
-    .industries {
-      padding: 60px 20px;
-      background-color: #f7f7f7;
-    }
-
-    .industries h3 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .industries ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .industries ul li {
-      font-size: 20px;
-      margin-bottom: 20px;
-      width: 45%;
-      text-align: center;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Call to Action */
-    .cta {
-      text-align: center;
-      padding: 40px 20px;
+    .services button {
       background-color: #333;
       color: #fff;
-    }
-
-    .cta h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .cta button {
-      background-color: #fff;
-      color: #333;
       border: none;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 12px 25px;
+      font-size: 16px;
       cursor: pointer;
       border-radius: 5px;
+      margin-top: 20px;
       text-transform: uppercase;
       font-weight: bold;
     }
 
-    .cta button:hover {
-      background-color: #ddd;
+    .services button:hover {
+      background-color: #555;
     }
 
     /* Footer */
@@ -227,17 +143,17 @@
 
     /* Mobile Styles */
     @media (max-width: 768px) {
-      .service-box {
+      header {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
       }
 
-      .service-text, .service-image {
-        width: 100%;
+      .hero h1 {
+        font-size: 36px;
       }
 
-      .industries ul li {
-        width: 100%;
+      .services h2 {
+        font-size: 28px;
       }
     }
   </style>
@@ -257,50 +173,26 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Business Consulting & Strategy</h1>
-    <p>We specialize in helping businesses create and execute strategies that lead to sustainable growth.</p>
-    <button onclick="window.location.href='#sign-up';">Sign up</button>
+    <h1>Our Services</h1>
+    <p>Discover how we can help your business grow and succeed with our tailored solutions.</p>
   </section>
 
   <!-- Services Section -->
   <section class="services">
-    <h2>Our Services</h2>
+    <h2>Business Consulting and Strategy</h2>
+    <p>We specialize in helping businesses of all sizes create and execute strategies that lead to sustainable growth and transformation. From startups to mature organizations, we equip teams with the tools and frameworks for success.</p>
 
-    <div class="service-box">
-      <div class="service-text">
-        <h3>Construction Procurement, Management, and Estimating</h3>
-        <p>We provide expert guidance for managing procurement processes, ensuring accuracy in estimation, and successful project completion.</p>
-      </div>
-      <div class="service-image">
-        <img src="construction-image.jpg" alt="Construction Procurement">
-      </div>
-    </div>
+    <h3>Expanded List of Services</h3>
+    <ul>
+      <li>Construction Procurement, Management, and Estimating</li>
+      <li>Minority Certification Assistance</li>
+      <li>Government Procurement & Contract Consulting</li>
+      <li>Grant Writing and Proposal Development</li>
+      <li>Event Marketing and Non-Profit Development</li>
+      <li>Immigration, Disability, and Social Services Support</li>
+    </ul>
+    <p>(See full list of services below or contact us for a customized service package.)</p>
 
-    <div class="service-box">
-      <div class="service-text">
-        <h3>Minority Certification Assistance</h3>
-        <p>Our team helps minority-owned businesses navigate the certification process, securing essential opportunities for growth.</p>
-      </div>
-      <div class="service-image">
-        <img src="certification-image.jpg" alt="Minority Certification Assistance">
-      </div>
-    </div>
-
-    <!-- More service-boxes with similar layout -->
-
-    <div class="service-box">
-      <div class="service-text">
-        <h3>Event Marketing and Non-Profit Development</h3>
-        <p>We help non-profits and event-based organizations optimize their marketing efforts to drive engagement and growth.</p>
-      </div>
-      <div class="service-image">
-        <img src="event-marketing.jpg" alt="Event Marketing">
-      </div>
-    </div>
-  </section>
-
-  <!-- Specialized Expertise Section -->
-  <section class="expertise">
     <h3>Specialized Expertise</h3>
     <ul>
       <li>Operational Excellence</li>
@@ -308,26 +200,29 @@
       <li>Outsourced Experts</li>
       <li>Alternative Housing Development</li>
     </ul>
-  </section>
 
-  <!-- Industries We Serve Section -->
-  <section class="industries">
     <h3>Industries We Serve</h3>
+    <p>Diverse Clientele</p>
     <ul>
       <li>Construction and Development</li>
       <li>Government and Non-Profit</li>
-      <li>Real Estate and Property Management</li>
       <li>Health and Human Services</li>
+      <li>Real Estate and Property Management</li>
       <li>Small Businesses and Startups</li>
     </ul>
-  </section>
+    <p>Our expertise helps drive growth across these diverse sectors by offering custom-tailored solutions.</p>
 
-  <!-- Call to Action Section -->
-  <section class="cta">
-    <h2>Book a Free Consultation</h2>
-    <button onclick="window.location.href='#book-now';">Book Now</button>
+    <div class="contact-info">
+      <p>Get in Touch with Us Today</p>
+      <p>Whether you have a question, need more information about our services, or would like to schedule a consultation, we’re here to help. Reach out to us using the contact information below:</p>
+      <button onclick="window.location.href='#contact';">Contact Us</button>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 Ascension Building Services.
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
+  </footer>
+
+</body>
+</html>
