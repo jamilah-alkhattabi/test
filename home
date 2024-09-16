@@ -89,6 +89,7 @@
       width: 100%;
       height: auto;
       display: block;
+      opacity: 0.7; /* Make the image slightly transparent */
     }
 
     .empowering-text {
@@ -99,9 +100,7 @@
       color: #fff;
       font-size: 24px;
       font-weight: bold;
-      background: rgba(0, 0, 0, 0.5); /* Optional: Add a slight background for better contrast */
-      padding: 10px;
-      border-radius: 5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
     }
 
     /* Contact Section */
@@ -156,7 +155,7 @@
 
   <!-- Header -->
   <header>
-    <img src="logo-url-here" alt="Ascension Building Services Logo">
+    <img src="https://github.com/jamilah-alkhattabi/test/blob/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -174,7 +173,7 @@
 
   <!-- Empowering Businesses Section -->
   <section class="empowering-container">
-    <img src="path-to-image.jpg" alt="Empowering Businesses">
+    <img src="https://github.com/jamilah-alkhattabi/test/blob/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg" alt="Empowering Businesses">
     <div class="empowering-text">Empowering Businesses for Success</div>
   </section>
 
