@@ -41,57 +41,72 @@
       text-decoration: underline;
     }
 
-    /* Contact Section with Image */
-    .contact-header {
+    /* Hero Section with Background Image */
+    .hero {
       position: relative;
-      background-image: url('https://github.com/jamilah-alkhattabi/test/raw/main/Book%20a%20free%20consultation.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
       color: white;
+      background: url('https://path-to-your-image.jpg') no-repeat center center/cover;
     }
 
-    .contact-header::after {
-      content: '';
+    .hero::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text stand out */
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* To darken the image slightly */
     }
 
-    .contact-header h1, .contact-header p {
+    .hero h1, .hero p {
       position: relative;
-      z-index: 1;
+      z-index: 1; /* Makes sure text appears above the background image */
     }
 
-    .contact-header h1 {
+    .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 36px;
+      font-size: 48px;
     }
 
-    .contact-header p {
+    .hero p {
       font-size: 18px;
-      margin-top: 10px;
+      margin: 20px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    /* Contact Information */
-    .contact-info {
+    /* Contact Section */
+    .contact {
       padding: 60px 20px;
       text-align: center;
-      font-size: 18px;
+      background-color: #f9f9f9;
     }
 
-    .contact-info a {
+    .contact h2 {
+      font-size: 32px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contact .contact-info {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .contact .contact-info a {
       color: #333;
       text-decoration: none;
     }
 
-    .contact-info a:hover {
+    .contact .contact-info a:hover {
       text-decoration: underline;
     }
 
@@ -155,7 +170,11 @@
         align-items: center;
       }
 
-      .contact-header h1 {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .contact h2 {
         font-size: 28px;
       }
     }
@@ -167,24 +186,29 @@
   <header>
     <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <!-- Contact Section with Image and Overlayed Text -->
-  <section class="contact-header">
+  <!-- Hero Section with Background Image -->
+  <section class="hero">
     <h1>Contact Us</h1>
     <p>We’re here to assist you. Get in touch via the options below.</p>
   </section>
 
-  <!-- Contact Information -->
-  <div class="contact-info">
-    <p>Email: <a href="mailto:operations@ascensionbuildingsvcs.com">operations@ascensionbuildingsvcs.com</a></p>
-    <p>Phone: <a href="tel:+13464428037">(346) 442-8037</a></p>
-    <p>Address: 6 Liberty Square, #2842, Boston, MA 02109</p>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Reach Out to Us</h2>
+    <p>If you have any questions, would like to learn more about our services, or need assistance, don’t hesitate to reach out. We're here to help your business grow.</p>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:operations@ascensionbuildingsvcs.com">operations@ascensionbuildingsvcs.com</a></p>
+      <p>Phone: <a href="tel:+13464428037">(346) 442-8037</a></p>
+      <p>Address: 6 Liberty Square, #2842, Boston, MA 02109</p>
+    </div>
 
     <!-- Social Media Links -->
     <div class="social-media">
@@ -201,7 +225,7 @@
       <p>Want to discuss your project with us? Book a free consultation today!</p>
       <button onclick="window.location.href='https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ21B6a-c8zBzulYg3-0S9upraVWFeYAvabGOAYyb3RUsfF2lmvuYhym0haM6m2UrqXbdRwdGsx7';">Book Consultation</button>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
   <footer>
