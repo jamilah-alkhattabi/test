@@ -26,7 +26,7 @@
     }
 
     header img {
-      width: 180px; /* Increased size for logo */
+      width: 220px; /* Increased size for logo */
       height: auto;
     }
 
@@ -93,6 +93,8 @@
       margin: 0 auto;
       display: block;
       object-fit: cover; /* Crop image if needed */
+      object-position: center center; /* Center the image */
+      clip-path: inset(10% 0 10% 0); /* Adjust clipping to crop top and bottom */
     }
 
     .empowering-text {
@@ -159,7 +161,7 @@
       }
 
       header img {
-        width: 150px; /* Adjust logo size for mobile */
+        width: 180px; /* Adjust logo size for mobile */
       }
     }
   </style>
