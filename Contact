@@ -80,23 +80,55 @@
       margin-bottom: 20px;
     }
 
-    .contact img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 30px;
+    .contact .overlay {
+      position: relative;
+      background-image: url('https://github.com/jamilah-alkhattabi/test/raw/main/Book%20a%20free%20consultation.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      color: #fff;
+      text-align: center;
+      filter: brightness(0.7); /* Makes the image less prominent */
     }
 
-    .contact .contact-info {
+    .overlay h2, .overlay p {
+      margin: 0;
+      z-index: 1;
+      font-size: 24px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .overlay p {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+    .overlay::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay to make text stand out */
+      z-index: 0;
+    }
+
+    /* Contact Info Section */
+    .contact-info {
       font-size: 18px;
       margin-bottom: 40px;
+      z-index: 1;
+      position: relative;
     }
 
-    .contact .contact-info a {
+    .contact-info a {
       color: #333;
       text-decoration: none;
     }
 
-    .contact .contact-info a:hover {
+    .contact-info a:hover {
       text-decoration: underline;
     }
 
@@ -189,14 +221,14 @@
     <p>We’re here to assist you. Get in touch via the options below.</p>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Section with Overlay Image -->
   <section class="contact">
-    <h2>Get in Touch</h2>
-    <p>We’re here to assist you. Get in touch via the options below.</p>
-    
-    <!-- Subtle Image Placement -->
-    <img src="https://github.com/jamilah-alkhattabi/test/raw/main/Book%20a%20free%20consultation.jpg" alt="Consultation image">
+    <div class="overlay">
+      <h2>Contact Us</h2>
+      <p>We’re here to assist you. Get in touch via the options below.</p>
+    </div>
 
+    <!-- Contact Information -->
     <div class="contact-info">
       <p>Email: <a href="mailto:operations@ascensionbuildingsvcs.com">operations@ascensionbuildingsvcs.com</a></p>
       <p>Phone: <a href="tel:+13464428037">(346) 442-8037</a></p>
