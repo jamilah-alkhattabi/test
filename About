@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About Us - Ascension Building Services</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    header img {
+      width: 150px;
+    }
+
+    nav a {
+      margin-left: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    .about-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 60px 20px;
+    }
+
+    .about-text {
+      max-width: 50%;
+    }
+
+    .about-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .about-image img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    /* Mission and Vision */
+    .mission-vision {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .mission-vision h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .mission-vision p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Get Started Button */
+    .get-started {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .get-started button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .get-started button:hover {
+      background-color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      font-size: 14px;
+      border-top: 1px solid #eee;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text, .about-image {
+        max-width: 100%;
+      }
+
+      .about-image img {
+        max-width: 200px;
+      }
+
+      .mission-vision h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-container">
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>Aja Tsige leads an accomplished team with over 20 years of experience in business development and government procurement. Our company is dedicated to helping businesses navigate the complexities of the public and private sectors. We specialize in providing tailored solutions that drive growth, enhance operational efficiency, and secure critical contracts.</p>
+      <p>With a strong foundation in management consulting, we pride ourselves on our ability to deliver results. Our services range from securing government contracts to guiding businesses through the certification process as minority or small business enterprises. We are committed to empowering businesses to reach their full potential.</p>
+      <p>At our core, we believe in personalized service. Every client receives the full benefit of our extensive expertise, industry knowledge, and a network of partnerships. Whether you're a small business owner looking to break into government contracting or an established company seeking to optimize operations, we are here to guide you every step of the way.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/aja-profile.jpg" alt="Aja Tsige">
+    </div>
+  </section>
+
+  <!-- Mission and Vision Section -->
+  <section class="mission-vision">
+    <h2>Our Mission</h2>
+    <p>To provide exceptional consulting services that empower businesses to achieve their goals through strategic planning, innovative solutions, and dedicated support.</p>
+
+    <h2>Our Vision</h2>
+    <p>To be the leading consulting firm that businesses trust for growth, compliance, and long-term success in both public and private sectors.</p>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started">
+    <button onclick="window.location.href='#services';">View Services</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
+  </footer>
+
+</body>
+</html>
