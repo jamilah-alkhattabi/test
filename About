@@ -15,7 +15,7 @@
       color: #333;
       line-height: 1.6;
     }
-    
+
     /* Header */
     header {
       display: flex;
@@ -72,26 +72,64 @@
 
     /* Mission and Vision */
     .mission-vision {
-      text-align: center;
-      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
       background-color: #f9f9f9;
     }
 
     .mission-vision h2 {
       font-family: 'Playfair Display', serif;
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      color: #333;
+      position: relative;
     }
 
-    .mission-vision p {
+    .mission-vision h2:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #333;
+      margin: 10px auto 20px auto;
+    }
+
+    .mission-vision .content-box {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .mission-vision .content-box p {
       font-size: 18px;
       margin-bottom: 20px;
+      color: #555;
     }
 
-    /* Get Started Button */
+    .mission-vision .icon {
+      font-size: 50px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Get Started Section */
     .get-started {
       text-align: center;
       margin-top: 30px;
+    }
+
+    .get-started p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
     }
 
     .get-started button {
@@ -177,15 +215,21 @@
 
   <!-- Mission and Vision Section -->
   <section class="mission-vision">
-    <h2>Our Mission</h2>
-    <p>To provide exceptional consulting services that empower businesses to achieve their goals through strategic planning, innovative solutions, and dedicated support.</p>
-
-    <h2>Our Vision</h2>
-    <p>To be the leading consulting firm that businesses trust for growth, compliance, and long-term success in both public and private sectors.</p>
+    <div class="content-box">
+      <div class="icon">🎯</div>
+      <h2>Our Mission</h2>
+      <p>To provide exceptional consulting services that empower businesses to achieve their goals through strategic planning, innovative solutions, and dedicated support.</p>
+    </div>
+    <div class="content-box">
+      <div class="icon">🌟</div>
+      <h2>Our Vision</h2>
+      <p>To be the leading consulting firm that businesses trust for growth, compliance, and long-term success in both public and private sectors.</p>
+    </div>
   </section>
 
   <!-- Get Started Section -->
   <section class="get-started">
+    <p>Get Started</p>
     <button onclick="window.location.href='#services';">View Services</button>
   </section>
 
