@@ -311,7 +311,6 @@
       <p>Plan for success with confidence. Our strategic planning services guide you through the development of actionable plans that align with your vision and drive long-term growth.</p>
     </div>
   </section>
-
 <!-- Industries We Serve Section -->
 <section class="industries">
   <h2>Industries We Serve</h2>
@@ -319,6 +318,10 @@
     <div class="industry-logo-item">
       <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h5.jpg" alt="Construction">
       <p>Construction</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h1.jpg" alt="Healthcare">
+      <p>Healthcare</p>
     </div>
     <div class="industry-logo-item">
       <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h4.jpg" alt="Technology">
@@ -331,10 +334,6 @@
     <div class="industry-logo-item">
       <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h3.jpg" alt="Government">
       <p>Government</p>
-    </div>
-    <div class="industry-logo-item">
-      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h1.jpg" alt="Healthcare">
-      <p>Healthcare</p>
     </div>
   </div>
 </section>
