@@ -5,117 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services | ABS Consulting</title>
   <style>
-    /* Inherit your website's design theme for fonts, colors, etc. */
     body {
-      font-family: inherit; /* Use existing font style */
-      background-color: inherit; /* Keep background color the same */
-      color: inherit; /* Text color as per your theme */
+      font-family: inherit; /* Use website font */
+      background-color: inherit;
+      color: inherit;
       margin: 0;
       padding: 0;
     }
+
+    /* Header and Footer */
     header, footer {
-      background-color: inherit; /* Keep header/footer theme consistent */
-    }
-    section {
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    h2 {
-      text-align: center;
-      font-size: 2.5rem; /* Adjust size to match existing theme */
-      color: inherit;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1rem;
-      color: inherit;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
       background-color: inherit;
     }
-    .hero h1 {
-      font-size: 3rem; /* Adjust font size */
-      margin-bottom: 15px;
+
+    /* Hero Section */
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f5f5f5; /* Adjust to your theme color */
     }
-    .hero button {
-      padding: 15px 30px;
-      background-color: #0052cc; /* Call-to-action button color */
-      color: #fff;
-      border: none;
-      border-radius: 5px;
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
       font-size: 1.2rem;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #0052cc;
+      color: white;
+      border: none;
       cursor: pointer;
     }
-    .hero button:hover {
-      background-color: #003d99; /* Hover effect */
-    }
+
     /* Services Section */
     .services {
+      padding: 40px 20px;
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
+
     .service-card {
-      background-color: #f8f8f8;
+      background-color: white;
+      border: 1px solid #ddd;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 30%;
       text-align: center;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
     }
+
     .service-card h3 {
-      font-size: 1.5rem;
       margin-bottom: 10px;
     }
-    .service-card p {
-      font-size: 1rem;
-      margin-bottom: 15px;
-    }
+
     /* Expertise Section */
     .expertise {
+      padding: 40px 20px;
       display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+      justify-content: space-around;
     }
-    .expertise .column {
+
+    .expertise div {
       width: 30%;
       text-align: center;
-      padding: 15px;
-      background-color: #f0f0f0;
-      border-radius: 8px;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
     }
-    .expertise h3 {
-      margin-bottom: 10px;
-      font-size: 1.5rem;
+
+    /* Industries We Serve Section */
+    .industries {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      text-align: center;
     }
-    .expertise p {
-      font-size: 1rem;
-    }
-    /* Carousel Section */
+
     .carousel {
       display: flex;
-      overflow-x: scroll;
+      overflow-x: auto;
       gap: 20px;
-      padding: 20px 0;
+      padding: 20px;
     }
+
     .carousel img {
-      max-width: 120px;
+      width: 100px;
       height: auto;
+      display: block;
     }
+
     /* Contact Section */
     .contact {
-      background-color: #f4f4f4;
-      text-align: center;
       padding: 40px 20px;
+      text-align: center;
+      background-color: #f5f5f5;
     }
+
     .contact form {
       max-width: 600px;
       margin: 0 auto;
@@ -123,35 +114,26 @@
       flex-direction: column;
       gap: 15px;
     }
+
     .contact input, .contact textarea {
       padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
       font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
+
     .contact button {
-      padding: 15px;
+      padding: 10px;
       background-color: #0052cc;
       color: white;
       border: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
       cursor: pointer;
     }
-    .contact button:hover {
-      background-color: #003d99;
-    }
-    /* Responsive Adjustments */
+
+    /* Responsive Design */
     @media (max-width: 768px) {
-      .services, .expertise {
-        flex-direction: column;
-        align-items: center;
-      }
-      .service-card, .expertise .column {
-        width: 90%;
-      }
-      .hero h1 {
-        font-size: 2.2rem;
+      .service-card, .expertise div {
+        width: 100%;
       }
     }
   </style>
@@ -160,70 +142,70 @@
 
   <!-- Header -->
   <header>
-    <!-- Include existing header content -->
+    <!-- Include existing header -->
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Business Consulting and Strategy for Sustainable Growth</h1>
-    <p>Empowering businesses of all sizes with the tools and frameworks for success.</p>
-    <button>Book a Free Consultation</button>
+    <h1>Business Consulting and Strategy</h1>
+    <p>We specialize in helping businesses of all sizes create and execute strategies for sustainable growth.</p>
+    <button>Sign Up</button>
   </section>
 
   <!-- Services Section -->
-  <section>
+  <section class="services">
     <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Construction Procurement</h3>
-        <p>Expert services in procurement, management, and estimating.</p>
-      </div>
-      <div class="service-card">
-        <h3>Minority Certification</h3>
-        <p>Assistance with minority certification to access new opportunities.</p>
-      </div>
-      <div class="service-card">
-        <h3>Government Procurement</h3>
-        <p>Consulting for navigating government procurement and contracts.</p>
-      </div>
-      <!-- Add more service cards here -->
+
+    <div class="service-card">
+      <h3>Construction Procurement</h3>
+      <p>Management and estimating services tailored for your construction projects.</p>
     </div>
+
+    <div class="service-card">
+      <h3>Minority Certification Assistance</h3>
+      <p>Helping you navigate minority certification processes to unlock new opportunities.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Government Procurement Consulting</h3>
+      <p>Expert guidance on winning government contracts and procurement strategies.</p>
+    </div>
+    
+    <!-- More service cards as needed -->
   </section>
 
   <!-- Expertise Section -->
-  <section>
-    <h2>Specialized Expertise</h2>
-    <div class="expertise">
-      <div class="column">
-        <h3>Operational Excellence</h3>
-        <p>Boosting operational efficiency and driving growth.</p>
-      </div>
-      <div class="column">
-        <h3>Technology Solutions</h3>
-        <p>Modern tech solutions to streamline your business.</p>
-      </div>
-      <div class="column">
-        <h3>Outsourced Experts</h3>
-        <p>Providing specialized expertise for your business needs.</p>
-      </div>
+  <section class="expertise">
+    <div>
+      <h3>Operational Excellence</h3>
+      <p>Optimizing operations to drive growth and efficiency.</p>
+    </div>
+
+    <div>
+      <h3>Technology Solutions</h3>
+      <p>Innovative technology solutions for business transformation.</p>
+    </div>
+
+    <div>
+      <h3>Outsourced Experts</h3>
+      <p>Leverage external expertise to enhance your team's capabilities.</p>
     </div>
   </section>
 
   <!-- Industries We Serve Section -->
-  <section>
+  <section class="industries">
     <h2>Industries We Serve</h2>
     <div class="carousel">
-      <img src="construction-industry.png" alt="Construction Industry">
-      <img src="government-industry.png" alt="Government Industry">
-      <img src="realestate-industry.png" alt="Real Estate Industry">
-      <img src="healthcare-industry.png" alt="Healthcare Industry">
-      <!-- Add more industry logos as needed -->
+      <img src="construction.png" alt="Construction">
+      <img src="government.png" alt="Government">
+      <img src="real-estate.png" alt="Real Estate">
+      <!-- Add more industry logos -->
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact">
-    <h2>Contact Us</h2>
+    <h2>Book a Free Consultation</h2>
     <form>
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -234,7 +216,7 @@
 
   <!-- Footer -->
   <footer>
-    <!-- Include existing footer content -->
+    <!-- Include existing footer -->
   </footer>
 
 </body>
