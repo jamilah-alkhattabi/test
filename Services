@@ -262,7 +262,6 @@
   <section class="hero">
     <h1>Business Consulting and Strategy for Sustainable Growth</h1>
     <p>Empowering businesses of all sizes with the tools and frameworks for success.</p>
-    <button onclick="window.location.href='#';">Learn More</button>
   </section>
 
   <!-- Services Section -->
