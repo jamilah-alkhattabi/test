@@ -325,16 +325,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
+ <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Ascension Building Services. All rights reserved.</p>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
   </footer>
+
 
 </body>
 </html>
