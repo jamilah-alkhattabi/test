@@ -316,14 +316,28 @@
 <section class="industries">
   <h2>Industries We Serve</h2>
   <div class="industry-logos">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h1.jpg" alt="Construction">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h2.jpg" alt="Technology">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h3.jpg" alt="Non-Profit">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h4.jpg" alt="Government">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h5.jpg" alt="Healthcare">
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h5.jpg" alt="Construction">
+      <p>Construction</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h4.jpg" alt="Technology">
+      <p>Technology</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h2.jpg" alt="Non-Profit">
+      <p>Non-Profit</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h3.jpg" alt="Government">
+      <p>Government</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h1.jpg" alt="Healthcare">
+      <p>Healthcare</p>
+    </div>
   </div>
 </section>
-
  <!-- Footer -->
   <footer>
     <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
