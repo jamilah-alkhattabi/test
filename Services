@@ -3,188 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Services - Ascension Building Services</title>
+  <title>Services | ABS Consulting</title>
   <style>
     /* Global Styles */
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
       line-height: 1.6;
     }
-    
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    header h1, footer p {
+      margin: 0;
+    }
+    section {
       padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
-    header img {
-      width: 150px;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
-    nav a {
-      margin-left: 15px;
-      font-family: 'Playfair Display', serif;
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
       font-size: 18px;
-      color: #333;
-      text-decoration: none;
-      transition: color 0.3s ease;
+      color: #555;
     }
-
-    nav a:hover {
-      color: #007BFF;
-      text-decoration: underline;
-    }
-
     /* Hero Section */
     .hero {
+      background-color: #f4f4f4;
       text-align: center;
-      padding: 100px 20px;
-      background-color: #007BFF;
-      color: #fff;
-      background-image: url('https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Book%20a%20free%20consultation.jpg');
-      background-size: cover;
-      background-position: center;
+      padding: 40px 20px;
     }
-
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      margin: 0;
-      font-weight: bold;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin: 20px 0;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero button {
-      background-color: #fff;
-      color: #007BFF;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .hero button:hover {
-      background-color: #007BFF;
-      color: #fff;
-    }
-
-    /* Services Section */
-    .services {
-      padding: 60px 20px;
-      background-color: #fff;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 20px auto;
-      max-width: 1200px;
-    }
-
-    .services h2 {
-      font-size: 36px;
-      font-family: 'Playfair Display', serif;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .services p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #666;
-    }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: left;
-      display: inline-block;
-      font-size: 18px;
-      color: #444;
-    }
-
-    .services li {
+      font-size: 42px;
       margin-bottom: 10px;
     }
-
-    .services h3 {
-      font-size: 24px;
-      margin-top: 40px;
-      color: #007BFF;
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
     }
-
-    .services .contact-info {
-      margin-top: 40px;
-    }
-
-    .services button {
-      background-color: #007BFF;
-      color: #fff;
+    .hero button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
       border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
       border-radius: 5px;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      font-size: 18px;
+      cursor: pointer;
     }
-
-    .services button:hover {
-      background-color: #0056b3;
+    .hero button:hover {
+      background-color: #555;
     }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
+    /* Services Section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .service-card {
       background-color: #fff;
-      font-size: 14px;
-      border-top: 1px solid #eee;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
     }
-
-    footer p {
-      margin: 0;
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
     }
-
-    /* Mobile Styles */
+    .service-card p {
+      font-size: 16px;
+      color: #555;
+    }
+    .service-card img {
+      max-width: 50px;
+      margin-bottom: 15px;
+    }
+    /* Expertise Section */
+    .expertise {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .expertise .column {
+      width: 30%;
+      padding: 10px;
+    }
+    .expertise img {
+      max-width: 50px;
+      margin-bottom: 10px;
+    }
+    .expertise h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .expertise p {
+      font-size: 16px;
+      color: #555;
+    }
+    /* Industries Section */
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+    .carousel img {
+      margin: 0 10px;
+      max-width: 150px;
+      height: auto;
+    }
+    /* Contact Section */
+    .contact {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #555;
+    }
+    /* Responsive Styles */
     @media (max-width: 768px) {
-      header {
+      .services, .expertise {
         flex-direction: column;
         align-items: center;
       }
-
+      .service-card, .expertise .column {
+        width: 90%;
+      }
       .hero h1 {
-        font-size: 36px;
-      }
-
-      .services h2 {
-        font-size: 28px;
-      }
-
-      .services ul {
-        text-align: center;
-        display: block;
+        font-size: 32px;
       }
     }
   </style>
@@ -193,67 +175,90 @@
 
   <!-- Header -->
   <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>ABS Consulting</h1>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Our Services</h1>
-    <p>Discover how we can help your business grow and succeed with our tailored solutions.</p>
-    <button onclick="window.location.href='#contact';">Contact Us</button>
+    <div class="container">
+      <h1>Business Consulting and Strategy for Sustainable Growth</h1>
+      <p>Empowering businesses of all sizes with the tools and frameworks for success.</p>
+      <button>Book a Free Consultation</button>
+    </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services">
-    <h2>Business Consulting and Strategy</h2>
-    <p>We specialize in helping businesses of all sizes create and execute strategies that lead to sustainable growth and transformation. From startups to mature organizations, we equip teams with the tools and frameworks for success.</p>
-
-    <h3>Expanded List of Services</h3>
-    <ul>
-      <li>Construction Procurement, Management, and Estimating</li>
-      <li>Minority Certification Assistance</li>
-      <li>Government Procurement & Contract Consulting</li>
-      <li>Grant Writing and Proposal Development</li>
-      <li>Event Marketing and Non-Profit Development</li>
-      <li>Immigration, Disability, and Social Services Support</li>
-    </ul>
-    <p>(See full list of services below or contact us for a customized service package.)</p>
-
-    <h3>Specialized Expertise</h3>
-    <ul>
-      <li>Operational Excellence</li>
-      <li>Technology Solutions</li>
-      <li>Outsourced Experts</li>
-      <li>Alternative Housing Development</li>
-    </ul>
-
-    <h3>Industries We Serve</h3>
-    <p>Diverse Clientele</p>
-    <ul>
-      <li>Construction and Development</li>
-      <li>Government and Non-Profit</li>
-      <li>Health and Human Services</li>
-      <li>Real Estate and Property Management</li>
-      <li>Small Businesses and Startups</li>
-    </ul>
-    <p>Our expertise helps drive growth across these diverse sectors by offering custom-tailored solutions.</p>
-
-    <div class="contact-info">
-      <p>Get in Touch with Us Today</p>
-      <p>Whether you have a question, need more information about our services, or would like to schedule a consultation, we’re here to help. Reach out to us using the contact information below:</p>
-      <button onclick="window.location.href='#contact';">Contact Us</button>
+  <section>
+    <h2>Our Services</h2>
+    <div class="container services">
+      <div class="service-card">
+        <img src="construction-icon.png" alt="Construction Icon">
+        <h3>Construction Procurement</h3>
+        <p>Providing expert services in procurement, management, and estimating.</p>
+      </div>
+      <div class="service-card">
+        <img src="minority-icon.png" alt="Minority Certification Icon">
+        <h3>Minority Certification</h3>
+        <p>Helping businesses get certified to access more opportunities.</p>
+      </div>
+      <div class="service-card">
+        <img src="gov-icon.png" alt="Government Consulting Icon">
+        <h3>Government Procurement</h3>
+        <p>Offering guidance in government contract consulting and compliance.</p>
+      </div>
+      <!-- Add more service cards similarly -->
     </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section>
+    <h2>Specialized Expertise</h2>
+    <div class="container expertise">
+      <div class="column">
+        <img src="operational-icon.png" alt="Operational Excellence Icon">
+        <h3>Operational Excellence</h3>
+        <p>Improving processes to drive efficiency and growth.</p>
+      </div>
+      <div class="column">
+        <img src="tech-icon.png" alt="Technology Solutions Icon">
+        <h3>Technology Solutions</h3>
+        <p>Bringing innovative tech solutions to enhance business operations.</p>
+      </div>
+      <div class="column">
+        <img src="outsourced-icon.png" alt="Outsourced Experts Icon">
+        <h3>Outsourced Experts</h3>
+        <p>Providing expert support for specialized business needs.</p>
+      </div>
+      <!-- Add more expertise items similarly -->
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section>
+    <h2>Industries We Serve</h2>
+    <div class="container carousel">
+      <img src="construction-logo.png" alt="Construction Industry">
+      <img src="gov-logo.png" alt="Government Industry">
+      <img src="realestate-logo.png" alt="Real Estate Industry">
+      <img src="health-logo.png" alt="Health Industry">
+      <!-- Add more industry logos -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
+    <p>&copy; 2024 ABS Consulting. All Rights Reserved.</p>
   </footer>
 
 </body>
