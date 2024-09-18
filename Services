@@ -321,4 +321,68 @@
       </div>
       <div class="service-card">
         <h3>Immigration, Disability, and Social Services Support</h3>
-        <
+        <p>We offer comprehensive support for immigration matters, disability services, and social programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialized Expertise Section -->
+  <section class="specialized-expertise">
+    <h2>Specialized Expertise</h2>
+    <div class="expertise-section">
+      <h3>Operational Excellence</h3>
+      <p>Streamline your processes for maximum efficiency. Our experts help optimize your operations to reduce costs, improve productivity, and enhance customer satisfaction.</p>
+    </div>
+    <div class="expertise-section">
+      <h3>Technology Solutions</h3>
+      <p>Leverage technology to drive innovation. We provide tailored technology solutions to help you stay ahead of the curve and achieve your business goals.</p>
+    </div>
+    <div class="expertise-section">
+      <h3>Outsourced Experts</h3>
+      <p>Access specialized expertise on demand. Our network of experienced professionals can provide specialized support for your projects.</p>
+    </div>
+    <div class="expertise-section">
+      <h3>Alternative Housing Development</h3>
+      <p>Create sustainable and affordable housing solutions. We specialize in developing innovative housing solutions that meet the needs of diverse communities.</p>
+    </div>
+  </section>
+
+  <!-- Industries We Serve Section -->
+  <section class="industries">
+    <h2>Industries We Serve</h2>
+    <div class="industry-logos">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/construction-logo.png" alt="Construction Logo">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/government-logo.png" alt="Government Logo">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/real-estate-logo.png" alt="Real Estate Logo">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/health-logo.png" alt="Health and Human Services Logo">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/startup-logo.png" alt="Small Businesses and Startups Logo">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ascension Building Services. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
