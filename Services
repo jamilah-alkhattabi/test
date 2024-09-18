@@ -191,8 +191,8 @@
     /* Footer */
     footer {
       padding: 40px 20px;
-      background-color: #333;
-      color: #fff;
+      background-color: #fff; /* Matching the footer color to home page */
+      color: #333;
       text-align: center;
     }
 
@@ -211,7 +211,7 @@
     }
 
     footer ul li a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
       font-size: 14px;
     }
