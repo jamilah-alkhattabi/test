@@ -342,20 +342,7 @@
 
   <!-- Footer -->
   <footer>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Ascension_Building_Services_Logo-removebg-preview.png" alt="Ascension Building Services Logo">
-    <ul>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Accessibility</a></li>
-      <li><a href="#">Sitemap</a></li>
-    </ul>
-    <p>&copy; 2024 Ascension Building Services. All rights reserved.</p>
-    <div class="social-icons">
-      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/facebook-icon.png" alt="Facebook">
-      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/twitter-icon.png" alt="Twitter">
-      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/linkedin-icon.png" alt="LinkedIn">
-      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/instagram-icon.png" alt="Instagram">
-    </div>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
   </footer>
 
 </body>
