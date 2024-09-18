@@ -311,43 +311,32 @@
       <p>Plan for success with confidence. Our strategic planning services guide you through the development of actionable plans that align with your vision and drive long-term growth.</p>
     </div>
   </section>
-/* Industries We Serve Section */
-.industries {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.industries h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.industry-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.industry-logo-item {
-  text-align: center;
-}
-
-.industry-logo-item img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.industry-logo-item p {
-  font-size: 16px;
-  margin: 0;
-  color: #333;
-  font-family: 'Playfair Display', serif;
-}
+<!-- Industries We Serve Section -->
+<section class="industries">
+  <h2>Industries We Serve</h2>
+  <div class="industry-grid">
+    <div class="industry-item">
+      <img src="https://github.com/jamilah-alkhattabi/test/blob/main/h5.jpg" alt="Construction">
+      <p>Construction</p>
+    </div>
+    <div class="industry-item">
+      <img src="https://github.com/jamilah-alkhattabi/test/blob/main/h1.jpg" alt="Healthcare">
+      <p>Healthcare</p>
+    </div>
+    <div class="industry-item">
+      <img src="https://github.com/jamilah-alkhattabi/test/blob/main/h4.jpg" alt="Technology">
+      <p>Technology</p>
+    </div>
+    <div class="industry-item">
+      <img src="https://github.com/jamilah-alkhattabi/test/blob/main/h2.jpg" alt="Non-Profit">
+      <p>Non-Profit</p>
+    </div>
+    <div class="industry-item">
+      <img src="https://github.com/jamilah-alkhattabi/test/blob/main/h3.jpg" alt="Government">
+      <p>Government</p>
+    </div>
+  </div>
+</section>
 
  <!-- Footer -->
   <footer>
