@@ -48,7 +48,24 @@
       background-position: center;
       text-align: center;
       padding: 120px 20px;
-      color: #333; /* Changed to match text color */
+      color: #333;
+      position: relative;
+    }
+
+    .hero {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+      z-index: 1;
+    }
+
+    .hero h1, .hero p, .hero button {
+      position: relative;
+      z-index: 2;
     }
 
     .hero h1 {
@@ -118,10 +135,63 @@
       font-size: 16px;
     }
 
+    /* Specialized Expertise Section */
+    .specialized-expertise {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .specialized-expertise h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .expertise-section {
+      margin-bottom: 40px;
+    }
+
+    .expertise-section h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .expertise-section p {
+      font-size: 16px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Industries We Serve Section */
+    .industries {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .industries h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .industry-logos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
+    }
+
+    .industry-logos img {
+      width: 100px;
+      height: auto;
+    }
+
     /* Footer */
     footer {
       padding: 40px 20px;
-      background-color: #fff;
+      background-color: #fff; /* Matching the footer color to home page */
       color: #333;
       text-align: center;
     }
@@ -161,12 +231,16 @@
         font-size: 36px;
       }
 
-      .services h2 {
+      .services h2, .specialized-expertise h2, .industries h2 {
         font-size: 28px;
       }
 
       .service-cards {
         grid-template-columns: 1fr;
+      }
+
+      .industry-logos {
+        flex-wrap: wrap;
       }
     }
   </style>
@@ -177,11 +251,11 @@
   <header>
     <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
   </header>
 
   <!-- Hero Section -->
@@ -193,10 +267,78 @@
   <!-- Services Section -->
   <section class="services" id="services">
     <h2>Our Services</h2>
-    <!-- ... content continues ... -->
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Construction Procurement, Management, and Estimating</h3>
+        <p>We provide expert guidance on sourcing materials, managing projects, and accurately estimating costs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Minority Certification Assistance</h3>
+        <p>We help businesses achieve minority certification status to access valuable opportunities and resources.</p>
+      </div>
+      <div class="service-card">
+        <h3>Government Procurement & Contract Consulting</h3>
+        <p>We assist businesses in navigating government procurement processes and securing contracts.</p>
+      </div>
+      <div class="service-card">
+        <h3>Grant Writing and Proposal Development</h3>
+        <p>We craft compelling grant proposals to help organizations secure funding for their initiatives.</p>
+      </div>
+      <div class="service-card">
+        <h3>Event Marketing and Non-Profit Development</h3>
+        <p>We specialize in creating effective marketing campaigns and strategies for non-profit organizations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Immigration, Disability, and Social Services Support</h3>
+        <p>We offer comprehensive support for immigration matters, disability services, and social programs.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Specialized Expertise Section -->
+  <section class="specialized-expertise">
+    <h2>Specialized Expertise</h2>
+    <div class="expertise-section">
+      <h3>Operational Excellence</h3>
+      <p>Streamline your processes for maximum efficiency. Our experts help optimize your operations to reduce costs, improve productivity, and enhance customer satisfaction.</p>
+    </div>
+    <div class="expertise-section">
+      <h3>Technology Solutions</h3>
+      <p>Leverage the power of technology to drive your business forward. We provide cutting-edge tech solutions that align with your business goals and help you stay ahead in a digital world.</p>
+    </div>
+    <div class="expertise-section">
+      <h3>Strategic Planning</h3>
+      <p>Plan for success with confidence. Our strategic planning services guide you through the development of actionable plans that align with your vision and drive long-term growth.</p>
+    </div>
+  </section>
+<!-- Industries We Serve Section -->
+<section class="industries">
+  <h2>Industries We Serve</h2>
+  <div class="industry-logos">
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h5.jpg" alt="Construction">
+      <p>Construction</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h1.jpg" alt="Healthcare">
+      <p>Healthcare</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h4.jpg" alt="Technology">
+      <p>Technology</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h2.jpg" alt="Non-Profit">
+      <p>Non-Profit</p>
+    </div>
+    <div class="industry-logo-item">
+      <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/h3.jpg" alt="Government">
+      <p>Government</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
   <footer>
     <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (346) 442-8037</p>
   </footer>
