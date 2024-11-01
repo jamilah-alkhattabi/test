@@ -21,24 +21,45 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 20px 50px;
       background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header img {
-      width: 150px;
+      width: 120px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      margin-left: 15px;
       font-family: 'Playfair Display', serif;
       font-size: 18px;
-      color: #333;
+      color: #1d3557;
       text-decoration: none;
+      position: relative;
+      transition: color 0.3s;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: #1d3557;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     /* Hero Section */
@@ -75,7 +96,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.2); /* Lighter dark overlay */
+      background-color: rgba(0, 0, 0, 0.2);
     }
 
     /* Contact Section */
@@ -154,9 +175,9 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #fff;
+      background-color: #333;
+      color: #fff;
       font-size: 14px;
-      border-top: 1px solid #eee;
     }
 
     footer p {
@@ -168,6 +189,7 @@
       header {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
       }
 
       .hero h1 {
@@ -186,11 +208,11 @@
   <header>
     <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
     <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <!-- Hero Section -->
@@ -230,8 +252,9 @@
 
   <!-- Footer -->
   <footer>
-    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (978) 533-0039</p>
+    <p>&copy; 2024 Ascension Building Services LLC. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
+
