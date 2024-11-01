@@ -83,7 +83,6 @@
       max-width: 600px;
       margin: 20px auto;
       color: #555;
-      font-weight: bold;
     }
 
     /* Contact Section */
@@ -97,33 +96,32 @@
       font-size: 32px;
       font-family: 'Playfair Display', serif;
       margin-bottom: 20px;
+      color: #1d3557;
     }
 
-    .contact p {
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
       font-size: 18px;
-      margin-bottom: 30px;
+      color: #555;
     }
 
-    .contact .contact-info {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-
-    .contact .contact-info a {
-      color: #333;
+    .contact-info a {
+      color: #1d3557;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .contact .contact-info a:hover {
+    .contact-info a:hover {
       text-decoration: underline;
     }
 
-    /* Social Media Icons */
     .social-media {
       display: flex;
-      justify-content: center;
       gap: 20px;
-      margin-bottom: 40px;
+      margin-top: 20px;
     }
 
     .social-media a img {
@@ -136,26 +134,25 @@
       transform: scale(1.1);
     }
 
-    /* Book Consultation Button */
+    /* Consultation Button */
     .consultation {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .consultation button {
-      background-color: #333;
+      background-color: #1d3557;
       color: #fff;
-      border: none;
       padding: 15px 30px;
       font-size: 18px;
-      cursor: pointer;
       border-radius: 5px;
+      margin-top: 40px;
       font-weight: bold;
       text-transform: uppercase;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
     }
 
-    .consultation button:hover {
-      background-color: #555;
+    .consultation:hover {
+      background-color: #457b9d;
+      transform: translateY(-3px);
     }
 
     /* Footer */
@@ -211,9 +208,8 @@
   <!-- Contact Section -->
   <section class="contact">
     <h2>Reach Out to Us</h2>
-    <p>If you have any questions, would like to learn more about our services, or need assistance, don’t hesitate to reach out. We're here to help your business grow.</p>
-
     <div class="contact-info">
+      <p>If you have any questions, would like to learn more about our services, or need assistance, don’t hesitate to reach out. We're here to help your business grow.</p>
       <p>Email: <a href="mailto:operations@ascensionbuildingsvcs.com">operations@ascensionbuildingsvcs.com</a></p>
       <p>Phone: <a href="tel:+13464428037">(346) 442-8037</a></p>
       <p>Address: 6 Liberty Square, #2842, Boston, MA 02109</p>
@@ -230,10 +226,8 @@
     </div>
 
     <!-- Book a Consultation -->
-    <div class="consultation">
-      <p>Want to discuss your project with us? Book a free consultation today!</p>
-      <button onclick="window.location.href='https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ21B6a-c8zBzulYg3-0S9upraVWFeYAvabGOAYyb3RUsfF2lmvuYhym0haM6m2UrqXbdRwdGsx7';">Book Consultation</button>
-    </div>
+    <p style="margin-top: 30px;">Want to discuss your project with us? Book a free consultation today!</p>
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ21B6a-c8zBzulYg3-0S9upraVWFeYAvabGOAYyb3RUsfF2lmvuYhym0haM6m2UrqXbdRwdGsx7" class="consultation">Book Consultation</a>
   </section>
 
   <!-- Footer -->
