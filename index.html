@@ -1,193 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ascension Building Services</title>
-  <style>
-    /* Global Styles */
-    body {
-      font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #fff;
-    }
+/* Global Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-    header img {
-      width: 150px;
-    }
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    nav a {
-      margin-left: 15px;
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      color: #333;
-      text-decoration: none;
-    }
+header img {
+  width: 150px;
+  transition: transform 0.3s;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+header img:hover {
+  transform: scale(1.05);
+}
 
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
+nav a {
+  margin-left: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #1d3557;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: #333;
-    }
+nav a:hover {
+  color: #457b9d;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin: 20px 0;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('your-background-image.jpg') no-repeat center/cover;
+  color: #fff;
+}
 
-    .hero button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
 
-    .hero button:hover {
-      background-color: #555;
-    }
+.hero button {
+  background-color: #1d3557;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-    /* Empowering Businesses Section */
-    .empowering-container {
-      position: relative;
-      text-align: center;
-      padding: 60px 20px;
-    }
+.hero button:hover {
+  background-color: #457b9d;
+  transform: translateY(-2px);
+}
 
-    .empowering-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      opacity: 0.7; /* Make the image slightly transparent */
-    }
+/* Empowering Businesses Section */
+.empowering-container {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .empowering-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
-    }
+.empowering-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.8;
+  filter: grayscale(20%);
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
 
-    /* Contact Section */
-    .contact {
-      padding: 60px 20px;
-      background-color: #f9f9f9;
-      text-align: center;
-    }
+.empowering-container img:hover {
+  transform: scale(1.02);
+}
 
-    .contact h2 {
-      font-size: 32px;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-    }
+.empowering-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
-    .contact p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #fff;
-      font-size: 14px;
-      border-top: 1px solid #eee;
-    }
+.contact h2 {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
 
-    footer p {
-      margin: 0;
-    }
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-      }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d3557;
+  font-size: 14px;
+  color: #fff;
+}
 
-      .hero h1 {
-        font-size: 36px;
-      }
+footer p {
+  margin: 0;
+}
 
-      .contact h2 {
-        font-size: 28px;
-      }
-    }
-  </style>
-</head>
-<body>
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  <!-- Header -->
-  <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
-  </header>
+  .hero h1 {
+    font-size: 36px;
+  }
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
-    <p>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</p>
-   <button onclick="window.location.href='services.html';">Discover Our Services</button>
-  </section>
-
-  <!-- Empowering Businesses Section -->
-  <section class="empowering-container">
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg" alt="Empowering Businesses">
-    <div class="empowering-text">Empowering Businesses for Success</div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: operations@ascensionbuildingsvcs.com</p>
-    <p>Phone: (978) 533-0039</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (978) 533-0039</p>
-  </footer>
-
-</body>
-</html>
+  .contact h2 {
+    font-size: 28px;
+  }
+}
