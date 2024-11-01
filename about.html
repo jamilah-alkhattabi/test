@@ -190,20 +190,29 @@
       margin: 40px auto;
     }
 
-    /* Get Started Section */
-    .get-started {
-      text-align: center;
-      margin-bottom: 80px;
-    }
-
-    .get-started p {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .get-started button {
+    /* Contact Teaser Section */
+    .contact-teaser {
+      padding: 60px 20px;
       background-color: #1d3557;
       color: #fff;
+      text-align: center;
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    }
+
+    .contact-teaser h3 {
+      font-size: 28px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
+    .contact-teaser p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .contact-teaser button {
+      background-color: #fff;
+      color: #1d3557;
       border: none;
       padding: 12px 25px;
       font-size: 16px;
@@ -211,10 +220,12 @@
       border-radius: 5px;
       text-transform: uppercase;
       font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
-    .get-started button:hover {
-      background-color: #457b9d;
+    .contact-teaser button:hover {
+      background-color: #f8faff;
+      transform: translateY(-2px);
     }
 
     /* Footer */
@@ -255,10 +266,6 @@
 
       .mission-vision p {
         font-size: 16px;
-      }
-
-      .get-started p {
-        font-size: 18px;
       }
     }
   </style>
@@ -321,10 +328,12 @@
     <p>To be the leading consulting firm that businesses trust for growth, compliance, and long-term success in both public and private sectors.</p>
   </section>
 
-  <!-- Get Started Section -->
-  <section class="get-started">
-    <p>Get Started</p>
-    <button onclick="window.location.href='services.html';">View Services</button>
+  <!-- Contact Teaser Section -->
+  <section class="contact-teaser">
+    <h3>Get in Touch</h3>
+    <p>Phone: (978) 533-0039</p>
+    <p>Email: operations@ascensionbuildingsvcs.com</p>
+    <button onclick="window.location.href='contact.html';">Contact Us</button>
   </section>
 
   <!-- Footer -->
