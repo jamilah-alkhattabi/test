@@ -1,154 +1,212 @@
-/* Global Styles */
-body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ascension Building Services</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-header img {
-  width: 150px;
-  transition: transform 0.3s;
-}
+    header img {
+      width: 150px;
+      transition: transform 0.3s;
+    }
 
-header img:hover {
-  transform: scale(1.05);
-}
+    header img:hover {
+      transform: scale(1.05);
+    }
 
-nav a {
-  margin-left: 15px;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  color: #1d3557;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    nav a {
+      margin-left: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #1d3557;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-nav a:hover {
-  color: #457b9d;
-}
+    nav a:hover {
+      color: #457b9d;
+    }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('your-background-image.jpg') no-repeat center/cover;
-  color: #fff;
-}
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg') no-repeat center/cover;
+      color: #fff;
+    }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
-}
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+    }
 
-.hero button {
-  background-color: #1d3557;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
+    .hero p {
+      font-size: 18px;
+      margin: 20px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.hero button:hover {
-  background-color: #457b9d;
-  transform: translateY(-2px);
-}
+    .hero button {
+      background-color: #1d3557;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+    }
 
-/* Empowering Businesses Section */
-.empowering-container {
-  position: relative;
-  text-align: center;
-  padding: 60px 20px;
-}
+    .hero button:hover {
+      background-color: #457b9d;
+      transform: translateY(-2px);
+    }
 
-.empowering-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0.8;
-  filter: grayscale(20%);
-  transform: translateZ(0);
-  transition: all 0.3s;
-}
+    /* Empowering Businesses Section */
+    .empowering-container {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-.empowering-container img:hover {
-  transform: scale(1.02);
-}
+    .empowering-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 0.8;
+      filter: grayscale(20%);
+      transition: transform 0.3s;
+    }
 
-.empowering-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+    .empowering-container img:hover {
+      transform: scale(1.02);
+    }
 
-/* Contact Section */
-.contact {
-  padding: 60px 20px;
-  background-color: #f4f4f9;
-  text-align: center;
-}
+    .empowering-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
 
-.contact h2 {
-  font-size: 32px;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 20px;
-  color: #1d3557;
-}
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      background-color: #f4f4f9;
+      text-align: center;
+    }
 
-.contact p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+    .contact h2 {
+      font-size: 32px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+      color: #1d3557;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1d3557;
-  font-size: 14px;
-  color: #fff;
-}
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
 
-footer p {
-  margin: 0;
-}
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1d3557;
+      font-size: 14px;
+      color: #fff;
+    }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+    footer p {
+      margin: 0;
+    }
 
-  .hero h1 {
-    font-size: 36px;
-  }
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
 
-  .contact h2 {
-    font-size: 28px;
-  }
-}
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .contact h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Over 20 Years of Excellence in Business Development and Procurement Solutions</h1>
+    <p>Providing comprehensive management consulting, government procurement, and business support services tailored to your needs.</p>
+    <button onclick="window.location.href='services.html';">Discover Our Services</button>
+  </section>
+
+  <!-- Empowering Businesses Section -->
+  <section class="empowering-container">
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg" alt="Empowering Businesses">
+    <div class="empowering-text">Empowering Businesses for Success</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: operations@ascensionbuildingsvcs.com</p>
+    <p>Phone: (978) 533-0039</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Ascension Building Services, LLC | 6 Liberty Square, #2842 Boston, MA 02109 | operations@ascensionbuildingsvcs.com | (978) 533-0039</p>
+  </footer>
+
+</body>
+</html>
