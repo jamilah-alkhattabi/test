@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ascension Building Services - About Us</title>
   <style>
     /* Global Styles */
@@ -11,9 +10,10 @@
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #fdfdfd;
       color: #333;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* Header */
@@ -21,61 +21,112 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 20px 50px;
       background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header img {
-      width: 180px; /* Reverted to original logo size */
+      width: 120px;
+      transition: transform 0.3s;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      margin-left: 15px;
       font-family: 'Playfair Display', serif;
       font-size: 18px;
-      color: #333;
+      color: #1d3557;
       text-decoration: none;
+      transition: color 0.3s;
+      position: relative;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: #1d3557;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile Menu Styles */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #fff;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 999;
+    }
+
+    .mobile-nav a {
+      font-size: 18px;
+      color: #1d3557;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .mobile-nav a:hover {
+      background-color: #f0f4f8;
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
+      background-color: #f8faff;
+      color: #333;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
     }
 
     .hero h1 {
+      font-size: 42px;
       font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: #333;
+      color: #1d3557;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 18px;
-      margin: 20px 0;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    .hero button:hover {
-      background-color: #555;
+      margin: 0 auto 30px;
+      color: #555;
     }
 
     /* About Us Section */
@@ -83,6 +134,8 @@
       display: flex;
       justify-content: space-between;
       padding: 60px 20px;
+      background-color: #ffffff;
+      position: relative;
     }
 
     .about-us .text {
@@ -96,18 +149,19 @@
     }
 
     .about-us h2 {
-      font-family: 'Playfair Display', serif;
       font-size: 32px;
-      color: #333;
+      color: #1d3557;
+      font-family: 'Playfair Display', serif;
       margin-bottom: 20px;
     }
 
     .about-us p {
       font-size: 18px;
       margin-bottom: 20px;
+      color: #555;
     }
 
-    /* Mission and Vision */
+    /* Mission and Vision Section */
     .mission-vision {
       text-align: center;
       background-color: #f9f9f9;
@@ -118,21 +172,20 @@
       font-size: 28px;
       font-family: 'Playfair Display', serif;
       margin-bottom: 15px;
-      color: #333;
+      color: #1d3557;
     }
 
     .mission-vision p {
       font-size: 18px;
-      margin-bottom: 40px;
       max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
+      color: #555;
     }
 
     .mission-vision hr {
       border: none;
       height: 2px;
-      background-color: #333;
+      background-color: #1d3557;
       width: 50px;
       margin: 40px auto;
     }
@@ -149,7 +202,7 @@
     }
 
     .get-started button {
-      background-color: #333;
+      background-color: #1d3557;
       color: #fff;
       border: none;
       padding: 12px 25px;
@@ -161,16 +214,16 @@
     }
 
     .get-started button:hover {
-      background-color: #555;
+      background-color: #457b9d;
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #fff;
+      background-color: #333;
+      color: #fff;
       font-size: 14px;
-      border-top: 1px solid #eee;
     }
 
     footer p {
@@ -179,9 +232,12 @@
 
     /* Mobile Styles */
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
+      nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
       }
 
       .about-us {
@@ -206,19 +262,44 @@
       }
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const mobileNav = document.querySelector('.mobile-nav');
+      mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>About Ascension Building Services</h1>
+    <p>Learn more about our commitment to empowering businesses through strategic consulting and tailored solutions.</p>
+  </section>
 
   <!-- About Us Section -->
   <section class="about-us">
