@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ascension Building Services LLC - Executive Summary</title>
+  <title>Ascension Building Services LLC</title>
   <style>
     /* Global Styles */
     body {
@@ -35,97 +35,114 @@
       font-style: italic;
     }
 
-    /* Intro Section */
-    .intro {
+    nav a {
+      margin: 0 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a8dadc;
+    }
+
+    /* Hero Section */
+    .hero {
       text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg') no-repeat center/cover;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .hero button {
+      background-color: #1d3557;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #457b9d;
+      transform: translateY(-2px);
+    }
+
+    /* About Section */
+    .about {
       padding: 50px 20px;
+      text-align: center;
       max-width: 800px;
       margin: auto;
     }
 
-    .intro h2 {
+    .about h3 {
       font-size: 28px;
       color: #1d3557;
       font-family: 'Playfair Display', serif;
     }
 
-    .intro p {
-      font-size: 18px;
-      margin: 15px 0;
-    }
-
-    /* Mission and Vision Section */
-    .section {
-      padding: 50px 20px;
-      background-color: #fff;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-
-    .section h3 {
-      font-size: 24px;
-      color: #1d3557;
-    }
-
-    .section p {
+    .about p {
       font-size: 18px;
       color: #555;
-      line-height: 1.6;
     }
 
-    /* Services Section */
-    .services {
+    /* Services Teaser Section */
+    .services-teaser {
       background-color: #f4f4f9;
       padding: 50px 20px;
       text-align: center;
     }
 
-    .services h2 {
+    .services-teaser h3 {
       font-size: 28px;
       color: #1d3557;
       font-family: 'Playfair Display', serif;
       margin-bottom: 20px;
     }
 
-    .service-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
     .service-item {
+      display: inline-block;
+      width: 200px;
       background-color: #fff;
       padding: 20px;
+      margin: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      font-size: 18px;
-      line-height: 1.6;
-      color: #333;
+      font-size: 16px;
     }
 
-    /* Contact Section */
-    .contact {
+    /* Contact Teaser */
+    .contact-teaser {
       padding: 50px 20px;
       background-color: #1d3557;
       color: #fff;
       text-align: center;
     }
 
-    .contact h2 {
+    .contact-teaser h3 {
       font-size: 28px;
-      margin-bottom: 20px;
       font-family: 'Playfair Display', serif;
-    }
-
-    .contact p {
-      font-size: 18px;
     }
 
     /* Footer */
@@ -140,13 +157,6 @@
     footer p {
       margin: 0;
     }
-
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-      .service-list {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 <body>
@@ -155,65 +165,44 @@
   <header>
     <h1>Ascension Building Services LLC</h1>
     <p>Extraordinary Solutions. Exemplary Support.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Intro Section -->
-  <section class="intro">
-    <h2>Executive Summary</h2>
-    <p>Ascension Building Services LLC (ASB) is a full-service business consulting company headquartered in Boston, Massachusetts. Founded in 2013, ASB has become a trusted advisory source for clients across various industries by providing exceptional Procurement, Development, Project Management, and Business Support solutions.</p>
-    <p>At Ascension, our clients' success is our ONLY success. We work alongside clients as partners to help them achieve unprecedented levels of growth and success.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Your Trusted Partner in Business Consulting</h2>
+    <p>Providing exceptional procurement, development, and business support solutions since 2013. At ASB, we drive growth and success for our clients by challenging the status quo and creating impactful strategies.</p>
+    <button onclick="window.location.href='about.html';">Learn More</button>
   </section>
 
-  <!-- Mission and Vision Section -->
-  <section class="section">
-    <h3>Our Mission</h3>
-    <p>Our mission is to challenge the status quo – to help leaders and teams rethink and reshape their organizations’ approach to people, processes, and technology while challenging our consultants to grow as leaders in the business community.</p>
+  <!-- About Section -->
+  <section class="about">
+    <h3>Executive Summary</h3>
+    <p>Ascension Building Services LLC (ASB) is a full-service business consulting company headquartered in Boston, Massachusetts. With a focus on operational excellence, we assist organizations in optimizing productivity and engagement by rethinking their approach to people, processes, and technology.</p>
   </section>
 
-  <section class="section">
-    <h3>Enterprise Growth and Transformation</h3>
-    <p>Whether there is a problem to be solved or a new business strategy to reflect your envisioned future, our consultants and industry expert partners will guide your organization with the key assessments and tools that enable actionable outcomes and strategies.</p>
+  <!-- Services Teaser Section -->
+  <section class="services-teaser">
+    <h3>Our Key Services</h3>
+    <div class="service-item">Project Management</div>
+    <div class="service-item">Business Development</div>
+    <div class="service-item">Government Procurement</div>
+    <div class="service-item">Strategic Planning</div>
+    <div class="service-item">Financial Services</div>
+    <button onclick="window.location.href='services.html';">Explore Services</button>
   </section>
 
-  <section class="section">
-    <h3>Strategic Planning and Execution</h3>
-    <p>Evolving customer expectations and emerging technologies pose challenges like never before. We create and execute workforce management strategies that optimize productivity and engagement across your organization.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item">Construction Procurement, Management, and Estimating Services</div>
-      <div class="service-item">Permitting Acquisition</div>
-      <div class="service-item">Process Review and Mapping</div>
-      <div class="service-item">Procedure Manual Development</div>
-      <div class="service-item">Minority Certification Assistance</div>
-      <div class="service-item">Government Procurement & Contract Consulting</div>
-      <div class="service-item">Contract Management Training</div>
-      <div class="service-item">Event Marketing / Planning</div>
-      <div class="service-item">Non-Profit Development</div>
-      <div class="service-item">Financial Services (Loan Assistance, Tax Services)</div>
-      <div class="service-item">Entity Formation (LLC, S-Corp, L.P., 501C, DBA)</div>
-      <div class="service-item">Grant Writing and Proposal Development</div>
-      <div class="service-item">Software Implementation & Training</div>
-      <div class="service-item">Immigration, Disability, & Social Services Support</div>
-      <div class="service-item">Title and Notary Services</div>
-      <div class="service-item">Business Coaching / Consulting / Mentor Services</div>
-      <div class="service-item">Website Development</div>
-      <div class="service-item">Proposal Review and Submission</div>
-      <div class="service-item">Human Resource and Professional Development Training</div>
-      <div class="service-item">Contract Management Services</div>
-      <div class="service-item">Foster and Group Homes; RTC & GRO's; Personal Care Homes; Assisted Living Facilities</div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: operations@ascensionbuildingsvcs.com</p>
+  <!-- Contact Teaser Section -->
+  <section class="contact-teaser">
+    <h3>Get in Touch</h3>
     <p>Phone: (562) 390-3539 | (346) 442-8037</p>
-    <p>Address: 6 Liberty Square, # 2842, Boston, MA 02109</p>
+    <p>Email: operations@ascensionbuildingsvcs.com</p>
+    <button onclick="window.location.href='contact.html';">Contact Us</button>
   </section>
 
   <!-- Footer -->
