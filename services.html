@@ -88,7 +88,7 @@
       color: #555;
     }
 
-    /* Services Section */
+    /* Services Grid */
     .services-list {
       padding: 60px 20px;
       background-color: #ffffff;
@@ -102,21 +102,29 @@
       margin-bottom: 20px;
     }
 
-    .services-list ul {
-      list-style: none;
-      padding: 0;
-      max-width: 800px;
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
       margin: auto;
+      padding-top: 20px;
     }
 
-    .services-list li {
+    .service-category ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-category li {
       font-size: 18px;
       color: #555;
       padding: 10px 0;
       border-bottom: 1px solid #eee;
     }
 
-    /* Contact Teaser Section */
+    /* Contact Teaser */
     .contact-teaser {
       padding: 60px 20px;
       background-color: #1d3557;
@@ -166,13 +174,14 @@
     /* Mobile Styles */
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
       }
 
       nav {
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
       }
 
       .hero h2 {
@@ -207,29 +216,41 @@
   <!-- Services List Section -->
   <section class="services-list">
     <h3>Our Key Services</h3>
-    <ul>
-      <li>Construction Procurement, Management, and Estimating Services</li>
-      <li>Permitting Acquisition</li>
-      <li>Process Review and Mapping</li>
-      <li>Procedure Manual Development</li>
-      <li>Minority Certification Assistance</li>
-      <li>Government Procurement & Contract Consulting</li>
-      <li>Contract Management Training</li>
-      <li>Event Marketing / Planning</li>
-      <li>Non-Profit Development</li>
-      <li>Financial Services (Loan Assistance, Tax Services)</li>
-      <li>Entity Formation (LLC, S-Corp, L.P., 501C, DBA)</li>
-      <li>Grant Writing and Proposal Development</li>
-      <li>Software Implementation & Training</li>
-      <li>Immigration, Disability, & Social Services Support</li>
-      <li>Title and Notary Services</li>
-      <li>Business Coaching / Consulting / Mentor Services</li>
-      <li>Website Development</li>
-      <li>Proposal Review and Submission</li>
-      <li>Human Resource and Professional Development Training</li>
-      <li>Contract Management Services</li>
-      <li>Foster and Group Homes; RTC & GRO's; Personal Care Homes; Assisted Living Facilities</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-category">
+        <ul>
+          <li>Construction Procurement, Management, and Estimating Services</li>
+          <li>Permitting Acquisition</li>
+          <li>Process Review and Mapping</li>
+          <li>Procedure Manual Development</li>
+          <li>Minority Certification Assistance</li>
+          <li>Government Procurement & Contract Consulting</li>
+          <li>Contract Management Training</li>
+        </ul>
+      </div>
+      <div class="service-category">
+        <ul>
+          <li>Event Marketing / Planning</li>
+          <li>Non-Profit Development</li>
+          <li>Financial Services (Loan Assistance, Tax Services)</li>
+          <li>Entity Formation (LLC, S-Corp, L.P., 501C, DBA)</li>
+          <li>Grant Writing and Proposal Development</li>
+          <li>Software Implementation & Training</li>
+          <li>Immigration, Disability, & Social Services Support</li>
+        </ul>
+      </div>
+      <div class="service-category">
+        <ul>
+          <li>Title and Notary Services</li>
+          <li>Business Coaching / Consulting / Mentor Services</li>
+          <li>Website Development</li>
+          <li>Proposal Review and Submission</li>
+          <li>Human Resource and Professional Development Training</li>
+          <li>Contract Management Services</li>
+          <li>Foster and Group Homes; RTC & GRO's; Personal Care Homes; Assisted Living Facilities</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Teaser Section -->
