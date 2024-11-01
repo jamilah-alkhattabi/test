@@ -72,8 +72,6 @@
       background-color: #f8faff;
       color: #333;
       box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
     }
 
     .hero h2 {
@@ -115,8 +113,6 @@
       padding: 60px 20px;
       text-align: center;
       background-color: #ffffff;
-      position: relative;
-      overflow: hidden;
     }
 
     .about h3 {
@@ -140,8 +136,6 @@
       background-color: #f0f4f8;
       box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-      position: relative;
-      overflow: hidden;
     }
 
     .services-teaser h3 {
@@ -198,15 +192,14 @@
     /* Mobile Styles */
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
       }
 
       nav {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
+        gap: 15px;
       }
 
       .hero h2 {
