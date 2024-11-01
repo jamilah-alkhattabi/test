@@ -65,48 +65,6 @@
       width: 100%;
     }
 
-    /* Mobile Menu Styles */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background-color: #333;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-
-    .mobile-nav {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      background-color: #fff;
-      position: absolute;
-      top: 70px;
-      right: 0;
-      width: 100%;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      z-index: 999;
-    }
-
-    .mobile-nav a {
-      font-size: 18px;
-      color: #1d3557;
-      text-decoration: none;
-      padding: 10px;
-      border-bottom: 1px solid #eee;
-      text-align: center;
-    }
-
-    .mobile-nav a:hover {
-      background-color: #f0f4f8;
-    }
-
     /* Hero Section */
     .hero {
       text-align: center;
@@ -240,19 +198,20 @@
     /* Mobile Styles */
     @media (max-width: 768px) {
       nav {
-        display: none;
-      }
-      .menu-toggle {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .contact-teaser h3 {
+        font-size: 24px;
       }
     }
   </style>
-  <script>
-    function toggleMenu() {
-      const mobileNav = document.querySelector('.mobile-nav');
-      mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script>
 </head>
 <body>
 
@@ -265,20 +224,7 @@
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
   </header>
-
-  <!-- Mobile Navigation -->
-  <div class="mobile-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
 
   <!-- Hero Section -->
   <section class="hero">
