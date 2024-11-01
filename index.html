@@ -10,62 +10,84 @@
       font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background-color: #fdfdfd;
       color: #333;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* Header */
     header {
-      text-align: center;
-      padding: 20px;
-      background-color: #1d3557;
-      color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin: 0;
+    /* Logo */
+    header img {
+      width: 120px;
+      transition: transform 0.3s;
     }
 
-    header p {
-      margin: 5px 0;
-      font-style: italic;
+    /* Navigation */
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      margin: 0 15px;
       font-family: 'Playfair Display', serif;
       font-size: 18px;
-      color: #fff;
+      color: #1d3557;
       text-decoration: none;
       transition: color 0.3s;
+      position: relative;
     }
 
-    nav a:hover {
-      color: #a8dadc;
+    nav a::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: #1d3557;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
       padding: 80px 20px;
-      background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/c529c4f8c91eedfbf1f0a0f71365b365.jpg') no-repeat center/cover;
-      color: #fff;
+      background-color: #f8faff;
+      color: #333;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
     }
 
     .hero h2 {
-      font-size: 36px;
+      font-size: 42px;
       font-family: 'Playfair Display', serif;
-      text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+      color: #1d3557;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 18px;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 0 auto 30px;
+      color: #555;
     }
 
     .hero button {
@@ -75,47 +97,55 @@
       padding: 12px 25px;
       font-size: 16px;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 50px;
       margin-top: 20px;
       text-transform: uppercase;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s, transform 0.3s;
     }
 
     .hero button:hover {
       background-color: #457b9d;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
     }
 
-    /* About Section */
+    /* About Teaser Section */
     .about {
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
-      max-width: 800px;
-      margin: auto;
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden;
     }
 
     .about h3 {
-      font-size: 28px;
+      font-size: 32px;
       color: #1d3557;
       font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
     }
 
     .about p {
       font-size: 18px;
+      max-width: 700px;
+      margin: auto;
       color: #555;
     }
 
     /* Services Teaser Section */
     .services-teaser {
-      background-color: #f4f4f9;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
+      background-color: #f0f4f8;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      position: relative;
+      overflow: hidden;
     }
 
     .services-teaser h3 {
-      font-size: 28px;
+      font-size: 32px;
       color: #1d3557;
       font-family: 'Playfair Display', serif;
       margin-bottom: 20px;
@@ -123,26 +153,33 @@
 
     .service-item {
       display: inline-block;
-      width: 200px;
-      background-color: #fff;
+      width: 180px;
+      background-color: #ffffff;
       padding: 20px;
-      margin: 10px;
+      margin: 15px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
     /* Contact Teaser */
     .contact-teaser {
-      padding: 50px 20px;
+      padding: 60px 20px;
       background-color: #1d3557;
       color: #fff;
       text-align: center;
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
     }
 
     .contact-teaser h3 {
       font-size: 28px;
       font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
     }
 
     /* Footer */
@@ -157,14 +194,32 @@
     footer p {
       margin: 0;
     }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .about h3, .services-teaser h3, .contact-teaser h3 {
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Ascension Building Services LLC</h1>
-    <p>Extraordinary Solutions. Exemplary Support.</p>
+    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -175,15 +230,15 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Your Trusted Partner in Business Consulting</h2>
-    <p>Providing exceptional procurement, development, and business support solutions since 2013. At ASB, we drive growth and success for our clients by challenging the status quo and creating impactful strategies.</p>
+    <h2>Leading Business Solutions for Growth</h2>
+    <p>Providing strategic, innovative consulting that empowers your business to succeed in today's evolving landscape.</p>
     <button onclick="window.location.href='about.html';">Learn More</button>
   </section>
 
-  <!-- About Section -->
+  <!-- About Teaser Section -->
   <section class="about">
-    <h3>Executive Summary</h3>
-    <p>Ascension Building Services LLC (ASB) is a full-service business consulting company headquartered in Boston, Massachusetts. With a focus on operational excellence, we assist organizations in optimizing productivity and engagement by rethinking their approach to people, processes, and technology.</p>
+    <h3>About Ascension Building Services</h3>
+    <p>Since 2013, we have dedicated ourselves to helping businesses challenge the status quo by rethinking people, processes, and technology for outstanding results.</p>
   </section>
 
   <!-- Services Teaser Section -->
