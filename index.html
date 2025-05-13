@@ -1,266 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ascension Building Services LLC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ascension Building Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    /* Global Styles */
     body {
-      font-family: 'Lato', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-family: 'Lato', sans-serif;
+      background-color: #fdf6ee;
+      color: #194547;
+      font-size: 20px;
     }
-
-    /* Header */
-    header {
+    nav {
+      background-color: #eedfbb;
+      padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      font-size: 22px;
     }
-
-    /* Logo */
-    header img {
-      width: 120px;
-      transition: transform 0.3s;
-    }
-
-    /* Navigation */
-    nav {
+    nav ul {
+      list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
-
     nav a {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      color: #1d3557;
       text-decoration: none;
-      transition: color 0.3s;
-      position: relative;
-    }
-
-    nav a::after {
-      content: "";
-      width: 0;
-      height: 2px;
-      background: #1d3557;
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background-color: #f8faff;
-      color: #333;
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      font-family: 'Playfair Display', serif;
-      color: #1d3557;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      color: #555;
-    }
-
-    .hero button {
-      background-color: #1d3557;
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 50px;
-      margin-top: 20px;
-      text-transform: uppercase;
+      color: #194547;
       font-weight: bold;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.3s;
     }
-
-    .hero button:hover {
-      background-color: #457b9d;
-      transform: translateY(-3px);
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 4rem 2rem;
+      background-color: #fdf6ee;
     }
-
-    /* About Teaser Section */
-    .about {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #ffffff;
+    .hero-text {
+      flex: 1;
+      padding: 2rem;
     }
-
-    .about h3 {
-      font-size: 32px;
-      color: #1d3557;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 15px;
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #194547;
     }
-
-    .about p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      color: #555;
+    .hero-text p {
+      font-size: 1.4rem;
+      color: #476c6d;
     }
-
-    /* Services Teaser Section */
-    .services-teaser {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #f0f4f8;
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
-      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    .hero-image {
+      flex: 1;
+      padding: 2rem;
     }
-
-    .services-teaser h3 {
-      font-size: 32px;
-      color: #1d3557;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-    }
-
-    .service-item {
-      display: inline-block;
-      width: 180px;
-      background-color: #ffffff;
-      padding: 20px;
-      margin: 15px;
+    .hero-image img {
+      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .service-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
     }
-
-    /* Contact Teaser */
-    .contact-teaser {
-      padding: 60px 20px;
-      background-color: #1d3557;
-      color: #fff;
-      text-align: center;
-      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    .card {
+      padding: 2rem;
+      border-radius: 12px;
+      color: #194547;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    .contact-teaser h3 {
-      font-size: 28px;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
+    .card h3 {
+      margin-top: 0;
     }
+    .bg-yellow { background-color: #eedfbb; }
+    .bg-teal { background-color: #97b9bf; }
+    .bg-salmon { background-color: #efa99c; }
+    .bg-peach { background-color: #f4cb87; }
 
-    /* Footer */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .about-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      flex: 1;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .about-text p {
+      font-size: 1.2rem;
+      color: #476c6d;
+    }
+    .btn {
+      background-color: #efa99c;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #194547;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-      }
-
-      nav {
-        flex-direction: row;
-        gap: 15px;
-      }
-
-      .hero h2 {
-        font-size: 36px;
-      }
-
-      .contact-teaser h3 {
-        font-size: 24px;
-      }
+      padding: 3rem 1rem;
+      background-color: #eedfbb;
+      font-size: 1rem;
+      color: #194547;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><strong>Ascension Building Services</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Header -->
-  <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <section class="grid-section">
+    <div class="card bg-yellow">
+      <h3>Inclusive Business Development</h3>
+      <p>Support for minority-owned, neurodivergent, and multilingual entrepreneurs to structure and grow sustainable businesses.</p>
+    </div>
+    <div class="card bg-teal">
+      <h3>Sustainable and Green Trade Training</h3>
+      <p>Programs in CNC machining, fabrication, and green practices for a climate-conscious workforce.</p>
+    </div>
+    <div class="card bg-salmon">
+      <h3>Grant Writing & Funding Access</h3>
+      <p>Navigate public and private funding channels with expert grant writing and capital access strategies.</p>
+    </div>
+    <div class="card bg-peach">
+      <h3>Digital Program Development</h3>
+      <p>Create inclusive learning platforms using VR, multilingual support, and self-paced tools for all learners.</p>
+    </div>
+    <div class="card bg-teal">
+      <h3>Workforce Training & Community Empowerment</h3>
+      <p>Inclusive training ecosystems that uplift underrepresented communities through employment-ready pathways.</p>
+    </div>
+    <div class="card bg-salmon">
+      <h3>Operational Efficiency & Growth</h3>
+      <p>Streamline internal systems, scale responsibly, and align with values-driven business goals.</p>
+    </div>
+  </section>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Leading Business Solutions for Growth</h2>
-    <p>Providing strategic, innovative consulting that empowers your business to succeed in today's evolving landscape.</p>
-    <button onclick="window.location.href='about.html';">Learn More</button>
+    <div class="hero-text">
+      <h1>Empowering Underserved Businesses and Communities</h1>
+      <p>Providing both high-impact solutions and equity-focused development across industries.</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://source.unsplash.com/600x400/?team,diverse,training" alt="Team Collaboration" />
+    </div>
   </section>
 
-  <!-- About Teaser Section -->
-  <section class="about">
-    <h3>About Ascension Building Services</h3>
-    <p>Since 2013, we have dedicated ourselves to helping businesses challenge the status quo by rethinking people, processes, and technology for outstanding results.</p>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>About Ascension Building Services</h2>
+      <p>Ascension is a mission-driven consultancy focused on inclusive growth, sustainability, and equity. We collaborate with entrepreneurs, nonprofits, and institutions to build stronger communities through accessible strategies and intentional partnerships.</p>
+      <button class="btn">Learn More</button>
+    </div>
+    <img src="https://source.unsplash.com/600x400/?office,community" alt="Office Collaboration" />
   </section>
 
-  <!-- Services Teaser Section -->
-  <section class="services-teaser">
-    <h3>Our Key Services</h3>
-    <div class="service-item">Project Management</div>
-    <div class="service-item">Business Development</div>
-    <div class="service-item">Financial Services</div>
-    <div class="service-item">Strategic Planning</div>
-    <div class="service-item">Government Procurement</div>
-    <button onclick="window.location.href='services.html';">Explore Services</button>
-  </section>
-
-  <!-- Contact Teaser Section -->
-  <section class="contact-teaser">
-    <h3>Get in Touch</h3>
-    <p>Phone: (978) 533-0039</p>
-    <p>Email: operations@ascensionbuildingsvcs.com</p>
-    <button onclick="window.location.href='contact.html';">Contact Us</button>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Ascension Building Services LLC. All rights reserved.</p>
+    &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
-
 </body>
 </html>
