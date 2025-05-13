@@ -1,267 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ascension Building Services LLC - Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Ascension Building Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    /* Global Styles */
     body {
-      font-family: 'Lato', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-family: 'Lato', sans-serif;
+      background-color: #fdf6ee;
+      color: #194547;
+      font-size: 20px;
     }
-
-    /* Header */
-    header {
+    nav {
+      background-color: #eedfbb;
+      padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
-
-    /* Logo */
-    header img {
-      width: 120px;
-      transition: transform 0.3s;
-    }
-
-    /* Navigation */
-    nav {
+    nav ul {
+      list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
-
     nav a {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      color: #1d3557;
       text-decoration: none;
-      transition: color 0.3s;
-      position: relative;
+      color: #194547;
+      font-weight: bold;
     }
-
-    nav a::after {
-      content: "";
-      width: 0;
-      height: 2px;
-      background: #1d3557;
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background-color: #f8faff;
-      color: #333;
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      font-family: 'Playfair Display', serif;
-      color: #1d3557;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      color: #555;
-    }
-
-    /* Services Grid */
-    .services-list {
-      padding: 60px 20px;
-      background-color: #ffffff;
-      text-align: center;
-    }
-
-    .services-list h3 {
-      font-size: 32px;
-      color: #1d3557;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .container {
       max-width: 1000px;
       margin: auto;
-      padding-top: 20px;
+      padding: 4rem 2rem;
     }
-
-    .service-category ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .service-category li {
-      font-size: 18px;
-      color: #555;
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    /* Contact Teaser */
-    .contact-teaser {
-      padding: 60px 20px;
-      background-color: #1d3557;
-      color: #fff;
-      text-align: center;
-      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
-    }
-
-    .contact-teaser h3 {
-      font-size: 28px;
+    h1 {
       font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 3rem;
     }
-
-    .contact-teaser button {
-      background-color: #fff;
-      color: #1d3557;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 50px;
-      font-weight: bold;
-      text-transform: uppercase;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.3s;
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2.5rem;
+      color: #194547;
     }
-
-    .contact-teaser button:hover {
-      background-color: #f8faff;
-      transform: translateY(-3px);
+    ul {
+      margin-left: 1.5rem;
+      line-height: 1.8;
+      color: #476c6d;
     }
-
-    /* Footer */
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-      }
-
-      nav {
-        flex-direction: row;
-        gap: 15px;
-      }
-
-      .hero h2 {
-        font-size: 36px;
-      }
-
-      .contact-teaser h3 {
-        font-size: 24px;
-      }
+      padding: 3rem 1rem;
+      background-color: #eedfbb;
+      font-size: 1rem;
+      color: #194547;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <ul><li><a href="index.html"><strong>Ascension Building Services</strong></a></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Our Comprehensive Services</h2>
-    <p>Explore a wide range of consulting and business support services designed to help your business thrive.</p>
-  </section>
+  <div class="container">
+  <h1>Our Services</h1>
 
-  <!-- Services List Section -->
-  <section class="services-list">
-    <h3>Our Key Services</h3>
-    <div class="services-grid">
-      <div class="service-category">
-        <ul>
-          <li>Construction Procurement, Management, and Estimating Services</li>
-          <li>Permitting Acquisition</li>
-          <li>Process Review and Mapping</li>
-          <li>Procedure Manual Development</li>
-          <li>Minority Certification Assistance</li>
-          <li>Government Procurement & Contract Consulting</li>
-          <li>Contract Management Training</li>
-        </ul>
-      </div>
-      <div class="service-category">
-        <ul>
-          <li>Event Marketing / Planning</li>
-          <li>Non-Profit Development</li>
-          <li>Financial Services (Loan Assistance, Tax Services)</li>
-          <li>Entity Formation (LLC, S-Corp, L.P., 501C, DBA)</li>
-          <li>Grant Writing and Proposal Development</li>
-          <li>Software Implementation & Training</li>
-          <li>Immigration, Disability, & Social Services Support</li>
-        </ul>
-      </div>
-      <div class="service-category">
-        <ul>
-          <li>Title and Notary Services</li>
-          <li>Business Coaching / Consulting / Mentor Services</li>
-          <li>Website Development</li>
-          <li>Proposal Review and Submission</li>
-          <li>Human Resource and Professional Development Training</li>
-          <li>Contract Management Services</li>
-          <li>Foster and Group Homes; RTC & GRO's; Personal Care Homes; Assisted Living Facilities</li>
-        </ul>
-      </div>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+    <div style="flex: 1 1 500px;">
+      <h2>Business Development & Strategy</h2>
+      <ul>
+        <li>One-on-one business coaching</li>
+        <li>Inclusive business structuring</li>
+        <li>Certification assistance (MBE, WBE, DBE)</li>
+        <li>Operational efficiency and strategic growth planning</li>
+      </ul>
     </div>
-  </section>
+    <div style="flex: 1 1 400px;"><img src="https://source.unsplash.com/500x350/?business,meeting" alt="Business Strategy" style="width: 100%; border-radius: 12px;" /></div>
+  </div>
 
-  <!-- Contact Teaser Section -->
-  <section class="contact-teaser">
-    <h3>Ready to Get Started?</h3>
-    <button onclick="window.location.href='contact.html';">Contact Us</button>
-  </section>
+  <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+    <div style="flex: 1 1 400px;"><img src="https://source.unsplash.com/500x350/?construction,project" alt="Construction Management" style="width: 100%; border-radius: 12px;" /></div>
+    <div style="flex: 1 1 500px;">
+      <h2>Construction & Project Management</h2>
+      <ul>
+        <li>General contracting & construction leadership</li>
+        <li>Permitting and regulatory compliance</li>
+        <li>Affordable housing & green building project management</li>
+        <li>SRO and transitional housing development</li>
+      </ul>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Ascension Building Services LLC. All rights reserved.</p>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+    <div style="flex: 1 1 500px;">
+      <h2>Financial & Legal Services</h2>
+      <ul>
+        <li>Entity formation and tax compliance</li>
+        <li>Grant writing and proposal development</li>
+        <li>Forensic accounting and loan preparation</li>
+        <li>Profit-sharing structuring and financial tracking</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 400px;"><img src="https://source.unsplash.com/500x350/?finance,documents" alt="Financial Services" style="width: 100%; border-radius: 12px;" /></div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+    <div style="flex: 1 1 400px;"><img src="https://source.unsplash.com/500x350/?technology,training" alt="Digital Training" style="width: 100%; border-radius: 12px;" /></div>
+    <div style="flex: 1 1 500px;">
+      <h2>Technology & Digital Training</h2>
+      <ul>
+        <li>Custom e-learning and digital program creation</li>
+        <li>VR and sensory-friendly educational design</li>
+        <li>IT support and software implementation</li>
+        <li>Website and content development for small businesses</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <div style="flex: 1 1 500px;">
+      <h2>Community & Workforce Development</h2>
+      <ul>
+        <li>Inclusive workforce training programs</li>
+        <li>Green trades and sustainable manufacturing skills</li>
+        <li>Nonprofit incubation and community event support</li>
+        <li>Immigration and social service access guidance</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 400px;"><img src="https://source.unsplash.com/500x350/?community,workforce" alt="Community Development" style="width: 100%; border-radius: 12px;" /></div>
+  </div>
+</div>
+
+<footer>
+    &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
 
 </body>
