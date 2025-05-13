@@ -33,33 +33,28 @@
       color: #194547;
       font-weight: bold;
     }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding: 4rem 2rem;
+    .logo-section {
       background-color: #fdf6ee;
+      padding: 2rem 0 1rem;
+      text-align: center;
     }
-    .hero-text {
-      flex: 1;
-      padding: 2rem;
+    .logo-section img {
+      width: 120px;
     }
-    .hero-text h1 {
-      font-size: 3rem;
+    .intro {
+      text-align: center;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .intro h1 {
+      font-size: 2.8rem;
       margin-bottom: 1rem;
-      color: #194547;
+      font-family: 'Playfair Display', serif;
     }
-    .hero-text p {
-      font-size: 1.4rem;
+    .intro p {
+      font-size: 1.3rem;
       color: #476c6d;
-    }
-    .hero-image {
-      flex: 1;
-      padding: 2rem;
-    }
-    .hero-image img {
-      width: 100%;
-      border-radius: 10px;
     }
     .grid-section {
       display: grid;
@@ -80,7 +75,6 @@
     .bg-teal { background-color: #97b9bf; }
     .bg-salmon { background-color: #efa99c; }
     .bg-peach { background-color: #f4cb87; }
-
     .about-section {
       display: flex;
       flex-wrap: wrap;
@@ -137,7 +131,28 @@
     </ul>
   </nav>
 
-  <section class="grid-section">
+  <div class="logo-section">
+    <img src="logo.png" alt="Ascension Logo">
+  </div>
+
+  <section class="intro">
+    <h1>Empowering Communities. Building Opportunities.</h1>
+    <p>Welcome to Ascension Building Services (ABS), a mission-driven consultancy dedicated to uplifting underserved communities through inclusive business development, strategic planning, and workforce training. Founded in Massachusetts and led by a neurodivergent CEO, ABS supports minority-owned, non-English-speaking, and neurodivergent-led businesses with customized solutions that drive sustainable growth.</p>
+  </section>
+
+  
+
+  <section class="call-to-action" style="text-align: center; padding: 3rem 1rem; background-color: #fdf6ee;">
+    <h2 style="font-size: 2rem; color: #194547;">Partner with Us</h2>
+    <p style="font-size: 1.3rem; max-width: 800px; margin: 1rem auto 0; color: #194547;">
+      Partner with us to transform your business, empower your community, and build a stronger, more inclusive future.
+    </p>
+  </section>
+
+  <section>
+    <h2 style="font-size: 2.2rem; text-align: center; margin: 4rem auto 2rem;">What We Offer</h2>
+    <div class="grid-section">
+    
     <div class="card bg-yellow">
       <h3>Inclusive Business Development</h3>
       <p>Support for minority-owned, neurodivergent, and multilingual entrepreneurs to structure and grow sustainable businesses.</p>
@@ -164,21 +179,11 @@
     </div>
   </section>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Empowering Underserved Businesses and Communities</h1>
-      <p>Providing both high-impact solutions and equity-focused development across industries.</p>
-    </div>
-    <div class="hero-image">
-      <img src="https://source.unsplash.com/600x400/?team,diverse,training" alt="Team Collaboration" />
-    </div>
-  </section>
-
   <section class="about-section">
     <div class="about-text">
       <h2>About Ascension Building Services</h2>
       <p>Ascension is a mission-driven consultancy focused on inclusive growth, sustainability, and equity. We collaborate with entrepreneurs, nonprofits, and institutions to build stronger communities through accessible strategies and intentional partnerships.</p>
-      <button class="btn">Learn More</button>
+      <a href="about.html"><button class="btn">Learn More</button></a>
     </div>
     <img src="https://source.unsplash.com/600x400/?office,community" alt="Office Collaboration" />
   </section>
