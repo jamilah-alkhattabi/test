@@ -19,7 +19,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 22px;
     }
     nav ul {
       list-style: none;
@@ -33,30 +32,48 @@
       color: #194547;
       font-weight: bold;
     }
-    .about-section {
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    p, li {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #476c6d;
+    }
+    .flex-boxes {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      justify-content: center;
       gap: 2rem;
-      padding: 6rem 2rem;
+      margin-top: 3rem;
     }
-    .about-section img {
-      max-width: 100%;
-      border-radius: 10px;
-      flex: 1;
+    .box {
+      flex: 1 1 450px;
+      padding: 2rem;
+      border-radius: 12px;
+      color: #194547;
+      text-align: center;
     }
-    .about-text {
-      flex: 1;
-    }
-    .about-text h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      font-family: 'Playfair Display', serif;
-    }
-    .about-text p {
-      font-size: 1.2rem;
-      color: #476c6d;
-      line-height: 1.7;
+    .mission { background-color: #f4cb87; }
+    .vision { background-color: #97b9bf; }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 2rem;
     }
     footer {
       text-align: center;
@@ -68,10 +85,9 @@
   </style>
 </head>
 <body>
+
   <nav>
-    <ul>
-      <li><strong>Ascension Building Services</strong></li>
-    </ul>
+    <ul><li><strong>Ascension Building Services</strong></li></ul>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -81,28 +97,77 @@
     </ul>
   </nav>
 
-  <section class="about-section">
-    <div class="about-text">
-      <h1>About Ascension Building Services</h1>
-      <p>
-        Founded by Aja Tsige, Ascension Building Services is a mission-driven business consultancy
-        based in Massachusetts. We specialize in empowering minority-owned, neurodivergent-led, and
-        non-English-speaking entrepreneurs through inclusive business development, operational
-        strategy, and workforce training. Our model bridges strategic consulting with community-based
-        empowerment, helping organizations thrive sustainably.
-      </p>
-      <p>
-        Through partnerships with community organizations, housing developers, and workforce alliances,
-        we support economic mobility and equity for those often left out of traditional systems. Our
-        work includes digital resource development, grant support, green trade training, and inclusive
-        entrepreneurship programs.
-      </p>
-    </div>
-    <img src="https://source.unsplash.com/600x400/?business,diversity" alt="Our Team Working Together" />
-  </section>
+  <div class="section">
+    <h1 style="text-align: center;">Who We Are</h1>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+      Ascension Building Services is a full-service consulting firm specializing in strategic planning, construction management,
+      community empowerment, and workforce development. We offer hands-on support to nonprofits, entrepreneurs, and small
+      businesses facing barriers to access and growth.
+    </p>
 
-  <footer>
+    <div class="flex-boxes">
+  <div class="box mission" style="background-color: #97b9bf;">
+    <h2>Our Mission</h2>
+    <p>
+      To empower and support underserved, minority-owned, and neurodivergent-led businesses with resources and innovative
+      strategies that create lasting community impact.
+    </p>
+  </div>
+  <div class="box vision" style="background-color: #97b9bf;">
+    <h2>Our Vision</h2>
+    <p>
+      To scale a digital-first consultancy that delivers sustainable development, inclusive workforce training, and business
+      tools to uplift diverse communities across the nation.
+    </p>
+  </div>
+</div>
+  
+</div>
+      
+    </div>
+
+    <div class="core-values" style="margin-top: 4rem; text-align: center;">
+  <h2 style="font-size: 2rem;">Core Values</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
+    <div style="width: 160px; height: 160px; background-color: #f4cb87; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; color: #194547;">
+      <strong>Inclusivity</strong>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">Opportunities for all.</p>
+    </div>
+    <div style="width: 160px; height: 160px; background-color: #f4cb87; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; color: #194547;">
+      <strong>Sustainability</strong>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">Built for long-term impact.</p>
+    </div>
+    <div style="width: 160px; height: 160px; background-color: #f4cb87; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; color: #194547;">
+      <strong>Collaboration</strong>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">Partners in progress.</p>
+    </div>
+    <div style="width: 160px; height: 160px; background-color: #f4cb87; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; color: #194547;">
+      <strong>Innovation</strong>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">Creative problem solving.</p>
+    </div>
+    <div style="width: 160px; height: 160px; background-color: #f4cb87; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; color: #194547;">
+      <strong>Empowerment</strong>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">Skills & strategy uplift.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <div class="leadership" style="margin-top: 4rem; text-align: center;">
+  <h2 style="font-size: 2rem;">Leadership Team</h2>
+  <img src="https://source.unsplash.com/300x300/?portrait,woman" alt="Aja Tsige" style="border-radius: 50%; margin-top: 1.5rem; width: 160px; height: 160px; object-fit: cover;" />
+  <h3 style="margin-top: 1rem; font-size: 1.5rem;">Aja Tsige – Founder & CEO</h3>
+  <p style="max-width: 700px; margin: 1rem auto; color: #476c6d; font-size: 1.1rem;">
+    Aja Tsige is the visionary behind Ascension Building Services. As a neurodivergent entrepreneur with decades of experience in housing development,
+    workforce training, and inclusive business strategy, she leads ABS with a deep commitment to equity, sustainability, and community empowerment.
+    Her hands-on leadership ensures that every project reflects the mission to uplift underserved communities and create lasting impact through
+    innovation and collaboration.
+  </p>
+</div>
+
+<footer>
     &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
+
 </body>
 </html>
