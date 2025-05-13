@@ -1,256 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Contact Us - Ascension Building Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Ascension Building Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    /* Global Styles */
     body {
-      font-family: 'Lato', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Lato', sans-serif;
+      background-color: #fdf6ee;
+      color: #194547;
+      font-size: 20px;
     }
-
-    /* Header */
-    header {
+    nav {
+      background-color: #eedfbb;
+      padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
-
-    header img {
-      width: 120px;
-    }
-
-    nav {
+    nav ul {
+      list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
-
     nav a {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      color: #1d3557;
       text-decoration: none;
-      transition: color 0.3s;
-      position: relative;
-    }
-
-    nav a::after {
-      content: "";
-      width: 0;
-      height: 2px;
-      background: #1d3557;
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    /* Mobile View Adjustments */
-    @media (max-width: 768px) {
-      header {
-        padding: 15px 20px;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      nav {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        gap: 15px;
-      }
-
-      nav a {
-        font-size: 16px;
-      }
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background-color: #f8faff;
-      color: #333;
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      color: #1d3557;
+      color: #194547;
       font-weight: bold;
     }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
-      color: #555;
-    }
-
-    /* Contact Section */
-    .contact {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-
-    .contact h2 {
-      font-size: 32px;
+    h1 {
       font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-      color: #1d3557;
+      text-align: center;
+      font-size: 2.8rem;
+      margin: 3rem 0 2rem;
     }
-
-    .contact-info {
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    form {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      font-size: 18px;
-      color: #555;
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
-
-    .contact-info a {
-      color: #1d3557;
-      text-decoration: none;
-      font-weight: bold;
+    input, textarea {
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Lato', sans-serif;
     }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    .social-media {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .social-media a img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.2s ease;
-    }
-
-    .social-media a img:hover {
-      transform: scale(1.1);
-    }
-
-    /* Consultation Section */
-    .consultation-section {
-      padding: 60px 20px;
-      background-color: #1d3557;
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #194547;
       color: #fff;
-      text-align: center;
-    }
-
-    .consultation-section h3 {
-      font-size: 28px;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-    }
-
-    .consultation-button {
-      background-color: #fff;
-      color: #1d3557;
-      padding: 15px 30px;
-      font-size: 18px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-transform: uppercase;
-      display: inline-block;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s;
-      text-decoration: none;
+      font-weight: bold;
+      align-self: flex-start;
     }
-
-    .consultation-button:hover {
-      background-color: #f8faff;
-      transform: translateY(-3px);
+    .info {
+      margin-top: 3rem;
+      font-size: 1.1rem;
+      color: #476c6d;
     }
-
-    /* Footer */
+    .info strong {
+      color: #194547;
+    }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 0;
+      padding: 3rem 1rem;
+      background-color: #eedfbb;
+      font-size: 1rem;
+      color: #194547;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="https://raw.githubusercontent.com/jamilah-alkhattabi/test/main/Inc.__1_-removebg-preview.png" alt="Ascension Building Services Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <ul><li><a href="index.html"><strong>Ascension Building Services</strong></a></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Contact Us</h1>
-    <p>We’re here to assist you. Get in touch via the options below.</p>
-  </section>
+  <h1>Contact Us</h1>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Reach Out to Us</h2>
-    <div class="contact-info">
-      <p>If you have any questions, would like to learn more about our services, or need assistance, don’t hesitate to reach out. We're here to help your business grow.</p>
-      <p>Email: <a href="mailto:operations@ascensionbuildingsvcs.com">operations@ascensionbuildingsvcs.com</a></p>
-      <p>Phone: <a href="tel:+13464428037">(346) 442-8037</a></p>
-      <p>Address: 6 Liberty Square, #2842, Boston, MA 02109</p>
+  <div class="container">
+    <div style="text-align: center; margin-top: 2rem;">
+      <p>For inquiries, please email us or contact us by phone. You can also reach out via social media using the links below.</p>
     </div>
 
-    <!-- Social Media Links -->
-    <div class="social-media">
-      <a href="https://www.instagram.com/ascensionbuilding/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61564773903146" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-      </a>
-    </div>
-  </section>
+    <div class="info">
+      <p><strong>Office Hours:</strong><br>
+        Mon–Thu: 7:00 AM – 7:00 PM<br>
+        Fri: 7:00 AM – 12:00 PM<br>
+        Sat/Sun: By appointment</p>
 
-  <!-- Consultation Section (Navy) -->
-  <section class="consultation-section">
-    <h3>Want to discuss your project with us? Book a free consultation today!</h3>
-    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ21B6a-c8zBzulYg3-0S9upraVWFeYAvabGOAYyb3RUsfF2lmvuYhym0haM6m2UrqXbdRwdGsx7" class="consultation-button">Book Consultation</a>
-  </section>
+      <p><strong>Phone:</strong><br>978-533-0039</p>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Ascension Building Services LLC. All rights reserved.</p>
+      <p><strong>Email:</strong><br>info@ascensionbuildingsvcs.com</p>
+      <div>
+  <p style="font-size: 1.2rem; font-weight: bold;">Follow Us</p>
+  <div style="display: flex; gap: 2rem; justify-content: flex-start; margin-top: 1rem;">
+    <a href="https://www.instagram.com/ascensionbuilding/" target="_blank">
+      <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" style="width: 48px; height: 48px;" />
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61564773903146" target="_blank">
+      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" style="width: 48px; height: 48px;" />
+    </a>
+    <a href="#" target="_blank">
+      <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" style="width: 48px; height: 48px;" />
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+<footer>
+    &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
 
 </body>
