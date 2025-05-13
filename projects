@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ascension Building Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #fdf6ee;
+      color: #194547;
+      font-size: 20px;
+    }
+    nav {
+      background-color: #eedfbb;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #194547;
+      font-weight: bold;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2.8rem;
+      margin: 3rem 0 2rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 3rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: #eedfbb;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #476c6d;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .card img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #eedfbb;
+      font-size: 1rem;
+      color: #194547;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul><li><a href="index.html"><strong>Ascension Building Services</strong></a></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Impact in Action</h1>
+
+  <section class="projects-grid">
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/health-checkup.png" alt="Healthcare Support" />
+      <h2>Maternal Health & Workforce Access</h2>
+      <p>Helped develop job training programs for young mothers by supporting curriculum design, certification alignment, and partner outreach in healthcare placement efforts.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/home.png" alt="Housing Support" />
+      <h2>Affordable Housing Access</h2>
+      <p>Assisted community partners with regulatory compliance, permitting, and site planning for housing projects aimed at stabilizing families and training jobsite workers.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/cutlery.png" alt="Culinary Support" />
+      <h2>Food Access & Entrepreneur Training</h2>
+      <p>Supported immigrant entrepreneurs and culinary jobseekers with kitchen site development, nonprofit coordination, and learning program design.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/hammer.png" alt="SRO Housing" />
+      <h2>Single Room Occupancy Redevelopment</h2>
+      <p>Worked on design strategy, zoning research, and mission alignment for transitional housing initiatives serving youth and vulnerable adults.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/renewable-energy.png" alt="Green Trades Icon" />
+      <h2>Green Trades & Workforce Pathways</h2>
+      <p>Created accessible pathways for training in solar installation, eco-manufacturing, and sustainable construction with inclusive learning tools.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
+  </footer>
+
+</body>
+</html>
