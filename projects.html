@@ -13,31 +13,39 @@
       color: #194547;
       font-size: 20px;
     }
+
     nav {
       background-color: #eedfbb;
       padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 22px;
+      flex-wrap: wrap;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
+
     nav a {
       text-decoration: none;
       color: #194547;
       font-weight: bold;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       text-align: center;
       font-size: 2.8rem;
       margin: 3rem 0 2rem;
     }
+
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -46,6 +54,7 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+
     .card {
       background-color: #eedfbb;
       border-radius: 12px;
@@ -53,26 +62,38 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       text-align: center;
     }
+
     .card h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.6rem;
       margin-bottom: 1rem;
     }
+
     .card p {
       color: #476c6d;
       font-size: 1.1rem;
       line-height: 1.6;
     }
+
     .card img {
       width: 80px;
       margin-bottom: 1rem;
     }
+
     footer {
       text-align: center;
       padding: 3rem 1rem;
       background-color: #eedfbb;
       font-size: 1rem;
       color: #194547;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
