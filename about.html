@@ -17,17 +17,18 @@
       background-color: #eedfbb;
       padding: 1.5rem 3rem;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      justify-content: space-between;
+      align-items: center;
       font-size: 22px;
+      flex-wrap: wrap;
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
-      flex-wrap: wrap;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
     nav a {
       text-decoration: none;
@@ -76,14 +77,14 @@
       margin-top: 4rem;
       text-align: center;
     }
-    .core-values-bubbles {
+    .core-values-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
       margin-top: 2rem;
     }
-    .bubble {
+    .core-values-container div {
       width: 160px;
       height: 160px;
       background-color: #f4cb87;
@@ -95,23 +96,19 @@
       padding: 1rem;
       color: #194547;
     }
-    .leadership {
-      margin-top: 4rem;
-      text-align: center;
-    }
-    .leadership img {
-      border-radius: 50%;
-      margin-top: 1.5rem;
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-    }
     footer {
       text-align: center;
       padding: 3rem 1rem;
       background-color: #eedfbb;
       font-size: 1rem;
       color: #194547;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
@@ -155,33 +152,33 @@
 
     <div class="core-values">
       <h2>Core Values</h2>
-      <div class="core-values-bubbles">
-        <div class="bubble">
+      <div class="core-values-container">
+        <div>
           <strong>Inclusivity</strong>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">Opportunities for all.</p>
         </div>
-        <div class="bubble">
+        <div>
           <strong>Sustainability</strong>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">Built for long-term impact.</p>
         </div>
-        <div class="bubble">
+        <div>
           <strong>Collaboration</strong>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">Partners in progress.</p>
         </div>
-        <div class="bubble">
+        <div>
           <strong>Innovation</strong>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">Creative problem solving.</p>
         </div>
-        <div class="bubble">
+        <div>
           <strong>Empowerment</strong>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">Skills & strategy uplift.</p>
         </div>
       </div>
     </div>
 
-    <div class="leadership">
+    <div class="leadership" style="margin-top: 4rem; text-align: center;">
       <h2>Leadership Team</h2>
-      <img src="Facetune_08-05-2025-20-30-55.jpg" alt="Aja Tsige" />
+      <img src="Facetune_08-05-2025-20-30-55.jpg" alt="Aja Tsige" style="border-radius: 50%; margin-top: 1.5rem; width: 160px; height: 160px; object-fit: cover;" />
       <h3 style="margin-top: 1rem; font-size: 1.5rem;">Aja Tsige – Founder & CEO</h3>
       <p style="max-width: 700px; margin: 1rem auto; color: #476c6d; font-size: 1.1rem;">
         Aja Tsige is the visionary behind Ascension Building Services. As a neurodivergent entrepreneur with decades of experience in housing development,
