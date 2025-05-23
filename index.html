@@ -19,11 +19,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 22px;
+      flex-wrap: wrap;
     }
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
       margin: 0;
       padding: 0;
@@ -39,7 +40,7 @@
       text-align: center;
     }
     .logo-section img {
-      width: 200px;
+      width: 160px;
     }
     .intro {
       text-align: center;
@@ -57,12 +58,15 @@
       color: #476c6d;
     }
     .grid-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
       padding: 4rem 2rem;
     }
     .card {
+      flex: 1 1 300px;
+      max-width: 400px;
       padding: 2rem;
       border-radius: 12px;
       color: #194547;
@@ -73,8 +77,7 @@
     }
     .bg-yellow { background-color: #eedfbb; }
     .bg-teal { background-color: #97b9bf; }
-    .bg-salmon { background-color: #efa99c; }
-    .bg-peach { background-color: #f4cb87; }
+    .bg-salmon { background-color: #f4cb87; }
     .about-section {
       display: flex;
       flex-wrap: wrap;
@@ -99,7 +102,7 @@
       color: #476c6d;
     }
     .btn {
-      background-color: #efa99c;
+      background-color: #f4cb87;
       padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 8px;
@@ -114,6 +117,14 @@
       background-color: #eedfbb;
       font-size: 1rem;
       color: #194547;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -132,7 +143,7 @@
   </nav>
 
   <div class="logo-section">
-    <img src="Inc.__1_-removebg-preview.png" alt="Ascension Logo">
+    <img src="logo.png" alt="Ascension Logo">
   </div>
 
   <section class="intro">
@@ -166,6 +177,8 @@
         <h3>Digital Program Development</h3>
         <p>Create inclusive learning platforms using VR, multilingual support, and self-paced tools for all learners.</p>
       </div>
+    </div>
+    <div class="grid-section" style="justify-content: center;">
       <div class="card bg-teal">
         <h3>Workforce Training & Community Empowerment</h3>
         <p>Inclusive training ecosystems that uplift underrepresented communities through employment-ready pathways.</p>
