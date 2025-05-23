@@ -13,52 +13,71 @@
       color: #194547;
       font-size: 20px;
     }
+
     nav {
       background-color: #eedfbb;
       padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 22px;
+      flex-wrap: wrap;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
+
     nav a {
       text-decoration: none;
       color: #194547;
       font-weight: bold;
     }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 4rem 2rem;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.8rem;
       text-align: center;
       margin-bottom: 3rem;
     }
+
     h2 {
       font-size: 1.8rem;
       margin-top: 2.5rem;
       color: #194547;
     }
+
     ul {
       margin-left: 1.5rem;
       line-height: 1.8;
       color: #476c6d;
     }
+
     footer {
       text-align: center;
       padding: 3rem 1rem;
       background-color: #eedfbb;
       font-size: 1rem;
       color: #194547;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
@@ -76,75 +95,75 @@
   </nav>
 
   <div class="container">
-  <h1>Our Services</h1>
+    <h1>Our Services</h1>
 
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1 1 500px;">
-      <h2>Business Development & Strategy</h2>
-      <ul>
-        <li>One-on-one business coaching</li>
-        <li>Inclusive business structuring</li>
-        <li>Certification assistance (MBE, WBE, DBE)</li>
-        <li>Operational efficiency and strategic growth planning</li>
-      </ul>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+      <div style="flex: 1 1 500px;">
+        <h2>Business Development & Strategy</h2>
+        <ul>
+          <li>One-on-one business coaching</li>
+          <li>Inclusive business structuring</li>
+          <li>Certification assistance (MBE, WBE, DBE)</li>
+          <li>Operational efficiency and strategic growth planning</li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_01_48 PM.png" style="width: 100%; border-radius: 12px;" /></div>
     </div>
-    <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_01_48 PM.png" style="width: 100%; border-radius: 12px;" /></div>
+
+    <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+      <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_03_16 PM.png" alt="Construction Management" style="width: 100%; border-radius: 12px;" /></div>
+      <div style="flex: 1 1 500px;">
+        <h2>Construction & Project Management</h2>
+        <ul>
+          <li>General contracting & construction leadership</li>
+          <li>Permitting and regulatory compliance</li>
+          <li>Affordable housing & green building project management</li>
+          <li>SRO and transitional housing development</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+      <div style="flex: 1 1 500px;">
+        <h2>Financial & Legal Services</h2>
+        <ul>
+          <li>Entity formation and tax compliance</li>
+          <li>Grant writing and proposal development</li>
+          <li>Forensic accounting and loan preparation</li>
+          <li>Profit-sharing structuring and financial tracking</li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_04_20 PM.png" alt="Financial Services" style="width: 100%; border-radius: 12px;" /></div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+      <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_05_22 PM.png" alt="Digital Training" style="width: 100%; border-radius: 12px;" /></div>
+      <div style="flex: 1 1 500px;">
+        <h2>Technology & Digital Training</h2>
+        <ul>
+          <li>Custom e-learning and digital program creation</li>
+          <li>VR and sensory-friendly educational design</li>
+          <li>IT support and software implementation</li>
+          <li>Website and content development for small businesses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+      <div style="flex: 1 1 500px;">
+        <h2>Community & Workforce Development</h2>
+        <ul>
+          <li>Inclusive workforce training programs</li>
+          <li>Green trades and sustainable manufacturing skills</li>
+          <li>Nonprofit incubation and community event support</li>
+          <li>Immigration and social service access guidance</li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_06_37 PM.png" alt="Community Development" style="width: 100%; border-radius: 12px;" /></div>
+    </div>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_03_16 PM.png" alt="Construction Management" style="width: 100%; border-radius: 12px;" /></div>
-    <div style="flex: 1 1 500px;">
-      <h2>Construction & Project Management</h2>
-      <ul>
-        <li>General contracting & construction leadership</li>
-        <li>Permitting and regulatory compliance</li>
-        <li>Affordable housing & green building project management</li>
-        <li>SRO and transitional housing development</li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1 1 500px;">
-      <h2>Financial & Legal Services</h2>
-      <ul>
-        <li>Entity formation and tax compliance</li>
-        <li>Grant writing and proposal development</li>
-        <li>Forensic accounting and loan preparation</li>
-        <li>Profit-sharing structuring and financial tracking</li>
-      </ul>
-    </div>
-    <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_04_20 PM.png" alt="Financial Services" style="width: 100%; border-radius: 12px;" /></div>
-  </div>
-
-  <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_05_22 PM.png" alt="Digital Training" style="width: 100%; border-radius: 12px;" /></div>
-    <div style="flex: 1 1 500px;">
-      <h2>Technology & Digital Training</h2>
-      <ul>
-        <li>Custom e-learning and digital program creation</li>
-        <li>VR and sensory-friendly educational design</li>
-        <li>IT support and software implementation</li>
-        <li>Website and content development for small businesses</li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-    <div style="flex: 1 1 500px;">
-      <h2>Community & Workforce Development</h2>
-      <ul>
-        <li>Inclusive workforce training programs</li>
-        <li>Green trades and sustainable manufacturing skills</li>
-        <li>Nonprofit incubation and community event support</li>
-        <li>Immigration and social service access guidance</li>
-      </ul>
-    </div>
-    <div style="flex: 1 1 400px;"><img src="ChatGPT Image May 22, 2025, 07_06_37 PM.png" alt="Community Development" style="width: 100%; border-radius: 12px;" /></div>
-  </div>
-</div>
-
-<footer>
+  <footer>
     &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
 
