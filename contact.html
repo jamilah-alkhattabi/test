@@ -13,42 +13,52 @@
       color: #194547;
       font-size: 20px;
     }
+
     nav {
       background-color: #eedfbb;
       padding: 1.5rem 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 22px;
+      flex-wrap: wrap;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
+
     nav a {
       text-decoration: none;
       color: #194547;
       font-weight: bold;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       text-align: center;
       font-size: 2.8rem;
       margin: 3rem 0 2rem;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
       padding: 2rem;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     input, textarea {
       font-size: 1rem;
       padding: 1rem;
@@ -56,6 +66,7 @@
       border: 1px solid #ccc;
       font-family: 'Lato', sans-serif;
     }
+
     button {
       padding: 1rem 2rem;
       font-size: 1rem;
@@ -67,20 +78,31 @@
       font-weight: bold;
       align-self: flex-start;
     }
+
     .info {
       margin-top: 3rem;
       font-size: 1.1rem;
       color: #476c6d;
     }
+
     .info strong {
       color: #194547;
     }
+
     footer {
       text-align: center;
       padding: 3rem 1rem;
       background-color: #eedfbb;
       font-size: 1rem;
       color: #194547;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
@@ -113,24 +135,25 @@
       <p><strong>Phone:</strong><br>978-533-0039</p>
 
       <p><strong>Email:</strong><br>info@ascensionbuildingsvcs.com</p>
-      <div>
-  <p style="font-size: 1.2rem; font-weight: bold;">Follow Us</p>
-  <div style="display: flex; gap: 2rem; justify-content: flex-start; margin-top: 1rem;">
-    <a href="https://www.instagram.com/ascensionbuilding/" target="_blank">
-      <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" style="width: 48px; height: 48px;" />
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61564773903146" target="_blank">
-      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" style="width: 48px; height: 48px;" />
-    </a>
-    <a href="#" target="_blank">
-      <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" style="width: 48px; height: 48px;" />
-    </a>
-  </div>
-</div>
-</div>
-</div>
 
-<footer>
+      <div>
+        <p style="font-size: 1.2rem; font-weight: bold;">Follow Us</p>
+        <div style="display: flex; gap: 2rem; justify-content: flex-start; margin-top: 1rem;">
+          <a href="https://www.instagram.com/ascensionbuilding/" target="_blank">
+            <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" style="width: 48px; height: 48px;" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61564773903146" target="_blank">
+            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" style="width: 48px; height: 48px;" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" style="width: 48px; height: 48px;" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
     &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
   </footer>
 
